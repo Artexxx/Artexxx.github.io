@@ -1,3 +1,34 @@
 [submodule "themes/DoIt"]
 	path = themes/DoIt
 	url = https://github.com/HEIGE-PCloud/DoIt.git
+
+# [submodule "themes/terminal"]
+# 	path = themes/terminal
+# 	url = https://github.com/panr/hugo-theme-terminal.git
+# [submodule "themes/pico"]
+# 	path = themes/pico
+# 	url = https://github.com/negrel/hugo-theme-pico.git
+# [submodule "themes/hugo-digital-garden-theme"]
+# 	path = themes/hugo-digital-garden-theme
+# 	url = https://github.com/paulmartins/hugo-digital-garden-theme.git
+# [submodule "themes/ananke"]
+# 	path = themes/ananke
+# 	url = https://github.com/theNewDynamic/gohugo-theme-ananke.git
+# [submodule "themes/archie"]
+# 	path = themes/archie
+# 	url = https://github.com/athul/archie.git
+# [submodule "themes/hello-friend"]
+# 	path = themes/hello-friend
+# 	url = https://github.com/panr/hugo-theme-hello-friend.git
+# [submodule "themes/beautifulhugo"]
+# 	path = themes/beautifulhugo
+# 	url = https://github.com/halogenica/beautifulhugo.git
+# [submodule "themes/jane"]
+# 	path = themes/jane
+# 	url = https://github.com/xianmin/hugo-theme-jane.git
+# [submodule "themes/m10c"]
+#   path = themes/m10c
+#   url = https://github.com/vaga/hugo-theme-m10c.git
+#[submodule "themes/hugo-ficurinia"]
+#	path = themes/hugo-ficurinia
+#	url = https://gitlab.com/gabmus/hugo-ficurinia.git

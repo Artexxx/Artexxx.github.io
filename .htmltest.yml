@@ -1,0 +1,25 @@
+DirectoryPath: public
+# CheckScripts: false
+IgnoreInternalEmptyHash: true
+IgnoreAltMissing: true
+IgnoreTagAttribute: true
+IgnoreSrcMissing: true
+IgnoreHTTPS: true
+# LogLevel: 3
+# TestFilesConcurrently: false
+# DocumentConcurrencyLimit: 4
+IgnoreDirectoryMissingTrailingSlash: true
+OutputDir: "htmltest_output"
+IgnoreDirs:
+  - ".git"
+  - ".github"
+  - ".vscode"
+  - "theme"
+  - "files"
+  - "node_modules"
+  - "static"
+  - "resources"
+  - "commit"
+IgnoreURLs:
+  - "^https://github.com/Artexxx/Artexxx.github.iocommit/.*"
+
