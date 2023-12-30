@@ -1,0 +1,4 @@
+{{- $color := .Get "color" -}} {{- $style := "" -}} {{- if $color -}} {{- $style = printf
+"background-color: %s" $color -}} {{- end -}}
+
+<mark style="{{ $style }}">{{ .Inner | markdownify }}</mark>

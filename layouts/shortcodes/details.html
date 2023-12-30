@@ -1,0 +1,10 @@
+{{/*  {< detail-tag "This is an example" "Examples are good for learning things and trying something new" >}  */}}
+{{ $_hugo_config := `{ "version": 1 }` -}}
+
+{{ $summary:= .Get 0 | safeHTML}}
+{{ $content:= .Get 1 | safeHTML }}
+
+<details>
+  <summary>{{$summary}}</summary>
+  {{$content}}
+</details>

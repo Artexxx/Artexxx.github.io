@@ -1,0 +1,6 @@
+{{/*  A hugo shortcode to set the colour of all text on the current line  */}}
+{{/* Usage: {{< colour "#6272a4" "Some words here" >}}  */}}
+
+{{ $colour := .Get 0 | safeCSS }}
+{{ $colour2 := .Get 1 | safeHTML }}
+<code style="background-color: {{ $colour }};"><span style="color: {{ $colour }}; filter:  grayscale(1) invert(1) contrast(100);">{{ $colour2 }}</span></code>

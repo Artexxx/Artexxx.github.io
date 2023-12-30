@@ -1,0 +1,51 @@
+{{ $url := urls.Parse (.Get 0) }} {{ $status_id := index (last 1 (split $url.Path "/")) 0 }} {{
+$api_url := printf "%s://%s/api/v1/statuses/%s" $url.Scheme $url.Host $status_id }} {{ $dataJ :=
+getJSON $api_url }} {{ with $dataJ }} {{ if ne .content "" }}
+<article class="toot h-entry">
+  <div rel="author" class="h-card p-author toot-avatar">
+    <img class="u-photo" width="50" src="{{ .account.avatar }}" />
+    <span style="display: none">{{ .account.display_name }}</span>
+  </div>
+  <p class="date">
+    Tooted on Mastodon
+    <time class="dt-published" datetime="{{ .created_at }}">
+      {{ dateFormat "January 2, 2006 15:04" (time .created_at) }}
+    </time>
+  </p>
+  <div class="e-content p-name">
+    {{ .content | safeHTML }} {{ if gt (len .media_attachments) 0 }}
+    <div class="toot-photos">
+      {{ range .media_attachments}} {{ if eq .type "image" }}
+      <img src="{{ .preview_url }}" alt="{{ .description }}" />
+      {{ end }} {{ end }}
+    </div>
+    {{ end }}
+  </div>
+  <a class="u-url" style="display: none">{{ .Permalink }}</a>
+  {{ range .tags }}
+  <a class="p-category" href="{{ .url }}" style="display: none">{{ .name }}</a>
+  {{ end }}
+  <div class="toot-social">
+    {{ $post_url := urls.Parse .url }} {{ $status_id := index (last 1 (split $post_url.Path "/")) 0
+    }} {{ $social_url := printf "%s://%s/interact/%s" $post_url.Scheme $post_url.Host $status_id }}
+    {{ $reply_url := printf "%s?type=reply" $social_url }} {{ $favorite_url := printf
+    "%s?type=favourite" $social_url }} {{ $boost_url := printf "%s?type=reblog" $social_url }}
+    <span>
+      <a class="fas fa-share" href="{{ $reply_url }}"></a>
+      {{ .replies_count }}
+    </span>
+    <span>
+      <a class="fas fa-retweet" href="{{ $boost_url }}"></a>
+      {{ .reblogs_count }}
+    </span>
+    <span>
+      <a class="fas fa-star" href="{{ $favorite_url }}"></a>
+      {{ .favourites_count }}
+    </span>
+    <span>
+      | Source:
+      <a class="u-syndication" href="{{ .url }}">{{ .url }}</a>
+    </span>
+  </div>
+</article>
+{{ end }} {{ end }}
