@@ -193,20 +193,37 @@ titleFontFamily = "Atkinson Hyperlegible"
 
     [params.page.comment]
       enable = true
-     [page.comment.telegram]
-          enable = true
-          siteID = "ecBeUfd9"
-          limit = 5
-          height = "400"
-          color = ""
-          colorful = true
-          dislikes = false
-          outlined = false
-          dark = true
+      # [page.comment.telegram]
+      #   enable = true
+      #   siteID = "ecBeUfd9"
+      #   limit = 5
+      #   height = "400"
+      #   color = ""
+      #   colorful = true
+      #   dislikes = false
+      #   outlined = false
+      #   dark = true
+
+      # # giscus comment config (https://giscus.app/)
+      # [page.comment.giscus]
+      #   enable = true
+      #   # owner/repo
+      #   dataRepo = ""
+      #   dataRepoId = ""
+      #   dataCategory = ""
+      #   dataCategoryId = ""
+      #   dataMapping = "pathname"
+      #   dataStrict = "0"
+      #   dataReactionsEnabled = "1"
+      #   dataEmitMetadata = "0"
+      #   dataInputPosition = "bottom"
+      #   lightTheme = "light"
+      #   darkTheme = "dark"
+      #   dataLang = "en"
 
       [params.page.comment.utterances]
-        enable = false
-        repo = "https://github.com/Artexxx/Artexxx.github.io"
+        enable = true
+        repo = "Atexxx/Artexxx.github.io"
         issueTerm = "blog-comments"
         label = "comments"
         lightTheme = "github-light"
