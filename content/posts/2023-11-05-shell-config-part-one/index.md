@@ -9,7 +9,10 @@ keywords: ["zsh", "bash", "scripting", "linux", "macOS"]
 
 tags: ["zsh", "bash", "scripting", "linux", "macOS"]
 categories: ["zsh", "scripting", "linux", "macOS"]
-series: ["ZSH", "Code"]
+series: ["Shell"]
+
+series_weight: 1
+
 featuredimage: "colour_vertical_icon_wbg_wide.png"
 # featuredImagePreview: "colour_vertical_icon_wbg_wide.png"
 images: ["colour_vertical_icon_wbg_wide.png"]
@@ -26,6 +29,8 @@ asciinema: false
 ---
 
 As of 2023, I've been using zsh as my primary shell for 14 years.
+
+<!--more-->
 
 Over that time I've experimented with and accumulated a lot of configuration, scripts, hacks, plugins and themes. I've settled on a configuration that I'm mostly happy with, over this series I'm going to share my current setup.
 

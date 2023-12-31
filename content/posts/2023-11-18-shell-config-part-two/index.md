@@ -9,7 +9,8 @@ keywords: ["zsh", "bash", "scripting", "linux", "macOS"]
 
 tags: ["zsh", "bash", "scripting", "linux", "macOS"]
 categories: ["zsh", "scripting", "linux", "macOS"]
-series: ["ZSH", "Code"]
+series: ["Shell"]
+series_weight: 2
 
 images: ["zsh-part-two.gif"]
 featuredimage: "zsh-part-two.gif"
@@ -35,6 +36,8 @@ draft: false
 ---
 
 Zsh Configuration and Plugins - Part two
+
+<!--more-->
 
 _You can find the first post in this series [here](/2022/11/zsh-configuration-and-plugins-part-one/)._
 
@@ -160,7 +163,7 @@ encrypt_file_pw() {
 
 Reads a password from keychain and outputs it
 
-usage: `keychain_password <service name to match on> <account>`
+Usage: `keychain_password <service name to match on> <account>`
 
 ```bash
 keychain_password() {
@@ -208,7 +211,7 @@ function ssh-add-keys() {
 
 ### `list_env`
 
-list env variables with fzf
+List env variables with fzf
 
 ```bash
 list_env() {

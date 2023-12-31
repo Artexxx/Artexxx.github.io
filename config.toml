@@ -5,7 +5,7 @@ languageName = "English"
 hasCJKLanguage = false
 defaultContentLanguage = "en"
 title = 'artexxx.github.io'
-copyright = "Sam McLeod"
+copyright = "Artexxx"
 timeZone = "Australia/Melbourne"
 
 # Code Highlight
@@ -180,15 +180,30 @@ titleFontFamily = "Atkinson Hyperlegible"
       ignoreFieldNorm = false
 
   [params.page]
+    # whether to show link to Raw Markdown content of the content
     linkToMarkdown = true
     # linkToEdit = "https://github.com/sammcj/smcleod/edit/main/content/{path}"
+
+    # whether to enable series navigation
+    seriesNavigation = true
 
     [params.page.code]
       copy = true
       maxShownLines = 100
 
     [params.page.comment]
-      enable = false
+      enable = true
+     [page.comment.telegram]
+          enable = true
+          siteID = "ecBeUfd9"
+          limit = 5
+          height = ""
+          color = ""
+          colorful = true
+          dislikes = false
+          outlined = false
+          dark = true
+
       [params.page.comment.utterances]
         enable = false
         repo = "https://github.com/Artexxx/Artexxx.github.io"

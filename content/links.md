@@ -12,7 +12,7 @@ norss: true
 
 ## Mine
 
-TODO
+TODO: Add error
 ## Software
 
 - [Bear](https://bear.app) - Markdown / Notes / Web Clipping
