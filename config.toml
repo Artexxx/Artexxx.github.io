@@ -196,8 +196,8 @@ titleFontFamily = "Atkinson Hyperlegible"
       [params.page.comment.utterances]
         enable = true
         repo = "Atexxx/Artexxx.github.io"
-        # issueTerm = "blog-comments"
-        issueTerm = "pathname"
+        issueTerm = "blog-comments"
+        # issueTerm = "pathname"
         label = "comments"
         lightTheme = "github-light"
         darkTheme = "github-dark"
