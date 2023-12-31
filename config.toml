@@ -193,6 +193,14 @@ titleFontFamily = "Atkinson Hyperlegible"
 
     [params.page.comment]
       enable = true
+      [params.page.comment.utterances]
+        enable = true
+        repo = "Atexxx/Artexxx.github.io"
+        # issueTerm = "blog-comments"
+        issueTerm = "pathname"
+        label = "comments"
+        lightTheme = "github-light"
+        darkTheme = "github-dark"
       # [page.comment.telegram]
       #   enable = true
       #   siteID = "ecBeUfd9"
@@ -221,13 +229,6 @@ titleFontFamily = "Atkinson Hyperlegible"
       #   darkTheme = "dark"
       #   dataLang = "en"
 
-      [params.page.comment.utterances]
-        enable = true
-        repo = "Atexxx/Artexxx.github.io"
-        issueTerm = "blog-comments"
-        label = "comments"
-        lightTheme = "github-light"
-        darkTheme = "github-dark"
 
     [params.page.toc]
       # whether to enable the table of the contents
