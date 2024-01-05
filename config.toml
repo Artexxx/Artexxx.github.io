@@ -80,6 +80,10 @@ titleFontFamily = "Atkinson Hyperlegible"
   posts = "/:year/:month/:slug/"
   page = "/:slug/"
 
+[module]
+[[module.imports]]
+    path = 'github.com/hugomods/giscus'
+
 [params]
   author = "Artexx"
 	subtitle = "The personal blog of Artexx"
@@ -193,14 +197,30 @@ titleFontFamily = "Atkinson Hyperlegible"
 
     [params.page.comment]
       enable = true
-      [params.page.comment.utterances]
+      # giscus comment config (https://giscus.app/)
+      [page.comment.giscus]
         enable = true
-        repo = "Atexxx/Artexxx.github.io"
-        issueTerm = "blog-comments"
-        # issueTerm = "pathname"
-        label = "comments"
-        lightTheme = "github-light"
-        darkTheme = "github-dark"
+        # owner/repo
+        dataRepo = "Artexxx/Artexxx.github.io"
+        dataRepoId = "R_kgDOK_NUFQ"
+        dataCategory = "Ideas"
+        dataCategoryId = "DIC_kwDOK_NUFc4CcHDz"
+        dataMapping = "pathname"
+        dataStrict = "0"
+        dataReactionsEnabled = "1"
+        dataEmitMetadata = "0"
+        dataInputPosition = "bottom"
+        lightTheme = "light"
+        darkTheme = "dark"
+        dataLang = "en"
+      # [params.page.comment.utterances]
+      #   enable = true
+      #   repo = "Atexxx/Artexxx.github.io"
+      #   issueTerm = "blog-comments"
+      #   # issueTerm = "pathname"
+      #   label = "comments"
+      #   lightTheme = "github-light"
+      #   darkTheme = "github-dark"
       # [page.comment.telegram]
       #   enable = true
       #   siteID = "ecBeUfd9"
@@ -212,22 +232,6 @@ titleFontFamily = "Atkinson Hyperlegible"
       #   outlined = false
       #   dark = true
 
-      # # giscus comment config (https://giscus.app/)
-      # [page.comment.giscus]
-      #   enable = true
-      #   # owner/repo
-      #   dataRepo = ""
-      #   dataRepoId = ""
-      #   dataCategory = ""
-      #   dataCategoryId = ""
-      #   dataMapping = "pathname"
-      #   dataStrict = "0"
-      #   dataReactionsEnabled = "1"
-      #   dataEmitMetadata = "0"
-      #   dataInputPosition = "bottom"
-      #   lightTheme = "light"
-      #   darkTheme = "dark"
-      #   dataLang = "en"
 
 
     [params.page.toc]
