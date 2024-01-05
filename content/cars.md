@@ -3,7 +3,7 @@ title: "Cars & Bikes"
 description: "Cars & Bikes list"
 author: "Artexxx"
 norss: true
-comments: false
+comments: true
 showDate: false
 # subtitle: Sam McLeod
 hiddenFromHomePage: true

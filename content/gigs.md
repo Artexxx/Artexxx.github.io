@@ -3,7 +3,7 @@ title: "Gigs"
 description: "Gigs list"
 author: "Artexxx"
 norss: true
-comments: false
+comments: true
 showDate: false
 toc: false
 hiddenFromHomePage: true

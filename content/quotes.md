@@ -6,6 +6,7 @@ tags:
 title: "Quotes and Musings"
 categories: [ quotes ]
 hideComments: true
+comments: true
 keywords: "quotes"
 showdate: false
 hiddenFromHomePage: true

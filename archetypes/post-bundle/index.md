@@ -39,7 +39,7 @@ code:
     copy: true
 
 comment:
-  enable: false
+  enable: true
 ---
 
 <!-- markdownlint-disable MD025 -->

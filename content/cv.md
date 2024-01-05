@@ -4,7 +4,7 @@ description: "Artexxx"
 aliases: ["cv", "resume", "experience", "jobs"]
 author: "Artexxx"
 norss: true
-comments: false
+comments: true
 showDate: false
 pageStyle: wide
 subtitle: Artexxx

@@ -3,7 +3,7 @@ title: "Links"
 excerpt: "Links to things I use."
 subtitle: "Links to things I use."
 type: pages
-comments: false
+comments: true
 showDate: false
 series: [ BestOf ]
 toc: true

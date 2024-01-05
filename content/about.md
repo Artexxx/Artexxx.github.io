@@ -4,7 +4,7 @@ description: "Artexx"
 aliases: ["contact", "linkedin"]
 author: "Artexxx"
 norss: true
-comments: false
+comments: true
 showDate: false
 pageStyle: wide
 subtitle: Artexxx
