@@ -16,6 +16,7 @@ images: ["zsh-part-two.gif"]
 featuredimage: "zsh-part-two.gif"
 featuredImagePreview: "zsh-part-two.gif"
 
+comments: true
 hiddenFromHomePage: false
 hiddenFromSearch: false
 

@@ -17,6 +17,7 @@ featuredimage: "colour_vertical_icon_wbg_wide.png"
 # featuredImagePreview: "colour_vertical_icon_wbg_wide.png"
 images: ["colour_vertical_icon_wbg_wide.png"]
 
+comments: true
 hiddenFromHomePage: false
 hiddenFromSearch: false
 
