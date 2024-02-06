@@ -12,4 +12,6 @@ tags: ["music", "gigs", "bands", "concerts"]
 categories: ["Music"]
 ---
 
-{{< gist sammcj 45a32a7df6ea5b4efec7a7dd3bf2fc95 >}}
+TODO
+
+<!-- {{< gist sammcj 45a32a7df6ea5b4efec7a7dd3bf2fc95 >}} -->

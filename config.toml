@@ -210,22 +210,6 @@ titleFontFamily = "Atkinson Hyperlegible"
         lightTheme = "light"
         darkTheme = "dark"
         dataLang = "en"
-      [page.comment.giscus]
-        enable = true
-        dataRepo = "Artexxx/Artexxx.github.io"
-        dataRepoId = "R_kgDOK_NUFQ"
-        dataCategory = "Announcements"
-        dataCategoryId = "DIC_kwDOK_NUFc4CcHDw"
-        dataMapping = "pathname"
-        dataStrict = "0"
-        dataReactionsEnabled = "1"
-        dataEmitMetadata = "0"
-        dataInputPosition = "bottom"
-        crossorigin = "anonymous"
-        lightTheme = "light"
-        darkTheme = "dark"
-        dataLang = "en"
-
 
     [params.page.toc]
       # whether to enable the table of the contents
