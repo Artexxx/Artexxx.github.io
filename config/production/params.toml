@@ -2,10 +2,10 @@ description = "This is my new Artexxx site"
 keywords = ["Hugo", "FixIt"]
 
 [author]
-name = "Lruihao"
+name = "Artexxx"
 email = ""
-link = "https://github.com/Lruihao"
-avatar = "https://lruihao.cn/images/avatar.jpg"
+link = "https://github.com/Artexxx"
+avatar = "https://avatars.githubusercontent.com/u/54672403?v=4"
 
 [app]
 title = "Artexxx Blog"

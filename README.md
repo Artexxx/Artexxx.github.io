@@ -1,123 +1,139 @@
-# Artexxx Blog Template (Go)
+# Spinach Harvests the Best
 
-This is a quick start template for Hugo theme [FixIt](https://github.com/hugo-fixit/FixIt). It uses [Hugo Modules](https://gohugo.io/hugo-modules/) feature to load the theme. If you favor Git more, you can [check this template](https://github.com/hugo-fixit/hugo-fixit-starter1).
+[![Hugo](https://img.shields.io/badge/Hugo-%5E0.146.0-ff4088?style=flat\&logo=hugo)](https://gohugo.io/)
+[![Hugo build and deploy](https://github.com/Artexxx/Artexxx.github.io/actions/workflows/deploy.yml/badge.svg?branch=main)](https://github.com/Artexxx/Artexxx.github.io/actions/workflows/deploy.yml)
+[![GitHub commit activity (main)](https://img.shields.io/github/commit-activity/m/Artexxx/Artexxx.github.io/main?style=flat)](https://github.com/Artexxx/Artexxx.github.io/commits/main)
 
-It comes with a basic theme structure and [configuration directory](https://gohugo.io/configuration/introduction/#configuration-directory)[^1]. GitHub action has been set up to deploy the blog to a public GitHub page automatically. Also, there's a cron job to update the theme automatically everyday.
+## Content
 
-[^1]: Instead of a single site configuration file, split your configuration by environment, root configuration key, and language.
+> The blog mainly focuses on development, sharing interesting programs, tips, development tutorials, thoughts, and study notes.
 
-## Directory structure
+Built with a content-first approach, it also includes an intelligent knowledge-base notebook that supports AI search, AI chat, and smart summaries. Click the 🤖 icon in the bottom-left corner to [try it now](https://artexxx.github.io/).
+
+* [Archives](https://artexxx.github.io/archives/)
+* [Categories](https://artexxx.github.io/categories/)
+* [Collections](https://artexxx.github.io/collections/)
+* [Tags](https://artexxx.github.io/tags/)
+
+## Roadmap
+
+## Project setup
+
+This blog has been deployed to [GitHub Pages](https://github.com/Artexxx/Artexxx.github.io). The workflow is shown below:
+
+![blog-flow](/assets/images/blog-flow.png)
 
 ```bash
 ▸ .github/       # GitHub configuration
-▸ archetypes/    # page archetypes (like scaffolds of archetypes)
+▸ .scripts/      # custom scripts
+▸ .shell/        # shell commands for hugo project, entry point: hugo_main.sh
+▸ archetypes/    # page archetypes (like scaffolds for hexo)
 ▸ assets/        # css, js, third-party libraries etc.
 ▸ config/        # configuration files
 ▸ content/       # markdown files for hugo project
-▸ data/          # blog data (allow: yaml, json, toml), e.g. friends.yml
+  ▸ private/     # private submodule for encrypted content
+▸ data/          # blog data (supported: yaml, json, toml), e.g. friends.yml
 ▸ public/        # build directory
 ▸ static/        # static files, e.g. favicon.ico
 ▸ themes/        # theme submodules
-▸ go.mod
-▸ go.sum
 ```
 
-## Quick Start
+### System requirements
 
-For a complete quick start, see this [page](https://fixit.lruihao.cn/documentation/getting-started/).
+* [Node.js](https://nodejs.org/): >= 18.0.0
+* [Go](https://go.dev/dl/)
+* [Hugo](https://gohugo.io/installation/): >= 0.146.0 (extended version)
 
-### Prerequisites
+### Clone
 
-- [Go](https://go.dev/dl/)
-- [Hugo](https://gohugo.io/installation/) (extended version)
-
-### Use Template
-
-#### CLI
+First, give it a Star, then download the source code:
 
 ```bash
-npx fixit-cli create my-blog
+git clone --recursive git@github.com:Artexxx/Artexxx.github.io.git && cd Artexxx.github.io
 ```
 
-#### Manual
+After downloading the source code, there are two ways to start the blog.
 
-1. Click [**Use this template**](https://github.com/hugo-fixit/hugo-fixit-starter/generate), and create your repository on GitHub.
+### NPM
 
-    <img width="913" alt="image" src="https://github.com/hugo-fixit/hugo-fixit-starter1/assets/33419593/d5fbd940-3ffd-4750-b1e6-4e87b50b0696">
+```bash
+npm install
+# build the blog
+npm run build
+# run a local debugging server with watch
+npm run server
+# run a local debugging server in production environment
+npm run server:production
+# update theme submodules
+npm run update:theme
+```
 
-2. Once the repository is created, just clone and enjoy it!
+<details>
+<summary>If you don’t have Hugo installed globally, you can even use Hugo via hugo-bin in a Node.js environment.</summary>
 
-    ```bash
-    # Clone with your own repository url
-    git clone --recursive https://github.com/<your_name>/<your_blog_repo>.git
-    ```
+Reference: [hugo-bin](https://github.com/fenneclab/hugo-bin)
 
-> [!TIP]
-> The repository name determines your GitHub Pages URL, for example:
->
-> | Repository Name | GitHub Pages |
-> | :--- | :--- |
-> | `<your_name>.github.io` | `https://<your_name>.github.io/` |
-> | `blog` | `https://<your_name>.github.io/blog/` |
+```bash
+npm install hugo-bin --save-dev
+```
 
-### Launching the Site
+`package.json` needs to be configured to use the `extended` version:
+
+```json
+{
+  ...
+  "hugo-bin": {
+    "buildTags": "extended"
+  }
+}
+```
+
+Then start it with `npx hugo`.
+
+</details>
+
+### Hugo
 
 ```bash
 # Development environment
-hugo server
+hugo server --disableFastRender --navigateToChanged --bind 0.0.0.0
 # Production environment
-hugo server -e production
-```
-
-### Build the Site
-
-When your site is ready to deploy, run the following command:
-
-```bash
-hugo
-```
-
-### Deploy to GitHub Pages
-
-> [!NOTE]
-> You may have noticed that the first automatic deployment of GitHub Actions after the template initialization failed. This is because you have not configured Workflow permissions and GitHub Pages.
-
-1. Head to Setting => Actions => General => Workflow permissions => Check "Read and write permissions".
-2. GitHub Pages settings: Setting => Pages => Source: GitHub Actions.
-3. Modify `config/_default/hugo.toml` file `baseURL` to your site URL.
-4. Commit the changes from the previous step to the `main` branch, and GitHub Actions will automatically build and deploy the site to GitHub Pages.
-
-### Update Theme
-
-Afterwards you can upgrade the theme with the following command:
-
-```bash
-# Update theme manually
-hugo mod get -u github.com/hugo-fixit/FixIt@latest
-hugo mod tidy
+hugo server --disableFastRender --navigateToChanged --environment production --bind 0.0.0.0
 ```
 
 <details>
-  <summary>Start via NPM script</summary>
+<summary>Additionally, you can run a shell script to choose commonly used Hugo commands.</summary>
 
-  ```bash
-  # build the blog
-  npm run build
-  # run a local debugging server with watch
-  npm run server
-  # run a local debugging server in production environment
-  npm run server:production
-  # update theme submodules
-  npm run update:theme
-  ```
+```bash
+cd .shell && sh hugo_main.sh
+```
+
+```text
+--------------Hugo Admin--------------
+Please enter the serial number to proceed
+--------------------------------------
+1. post
+2. server
+3. server:production
+4. build
+5. submodule-sync
+6. push
+--------------------------------------
+Press Ctrl+C to stop
+```
 
 </details>
 
-## Troubleshooting
+## License
 
-<details>
-  <summary>remote: Permission to git denied to github-actions[bot].</summary>
-  Head to Setting => Actions => General => Workflow permissions => Check "Read and write permissions".
-</details>
+[![Content License](https://img.shields.io/badge/license-CC_BY--NC--SA_4.0-blue?style=flat)](https://creativecommons.org/licenses/by-nc-sa/4.0/)
+[![License](https://img.shields.io/github/license/Artexxx/Artexxx.github.io?style=flat)](https://github.com/Artexxx/Artexxx.github.io/blob/main/LICENSE)
 
-<!-- This project was generated with [hugo-fixit-starter](https://github.com/hugo-fixit/hugo-fixit-starter). -->
+* Content in this repository (text, images, videos, etc.) is licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/)
+* Code in this repository is licensed under [MIT](https://github.com/Artexxx/Artexxx.github.io/blob/main/LICENSE)
+* *The `content/private` directory is not covered by any license*
+
+
+## Author
+
+[Artexxx](https://github.com/Artexxx "Follow me on GitHub")

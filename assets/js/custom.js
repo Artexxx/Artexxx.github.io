@@ -1,6 +1,6 @@
 /**
  * Custom JavaScript for FixIt blog site.
- * @author @Lruihao https://lruihao.cn
+ * @author @Artexxx https://artexxx.github.io/
  */
 class FixItBlog {
   /**
