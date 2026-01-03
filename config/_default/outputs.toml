@@ -1,0 +1,33 @@
+# -------------------------------------------------------------------------------------
+# Output Configuration
+# See: https://gohugo.io/configuration/outputs/
+# -------------------------------------------------------------------------------------
+
+# Options to make hugo output files, the optional values are below:
+# home = ["html", "rss", "archives", "offline", "readme", "baidu_urls", "search"]
+# page = ["html", "markdown"]
+# section = ["html", "rss"]
+# taxonomy = ["html"]
+# term = ["html", "rss"]
+
+_merge = "shallow"
+home = [
+  "html",
+  "rss",
+  "archives",
+  "offline",
+  "search"
+]
+page = [
+  "html",
+  "markdown"
+]
+section = [
+  "html",
+  "rss"
+]
+taxonomy = [ "html" ]
+term = [
+  "html",
+  "rss"
+]
