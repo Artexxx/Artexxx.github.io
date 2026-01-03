@@ -81,9 +81,9 @@ dark = "#252627"
 
 # Search config
 [search]
-enable = false
+enable = true
 # type of search engine ["algolia", "fuse", "cse", "post-chat"]
-type = "fuse"
+type = "algolia"
 # max index length of the chunked content
 contentLength = 4000
 # placeholder of the search bar
@@ -100,9 +100,9 @@ absoluteURL = false
 anchorify = true
 
 [search.algolia]
-index = ""
-appID = ""
-searchKey = ""
+index = "index"
+appID = "WQZDH98A16"
+searchKey = "4d6f9858796be7bf2cef3487b5dc9849"
 
 # FixIt 0.2.17 | NEW https://fusejs.io/api/options.html
 [search.fuse]
@@ -298,11 +298,11 @@ paginate = 6
 # FixIt 0.2.16 | CHANGED Social config about the author
 [social]
 GitHub = "https://github.com/Artexxx"
-Linkedin = ""
+Linkedin = "www.linkedin.com/in/artexxx"
+Telegram = "https://t.me/Artem3XXX"
 Twitter = ""
 Instagram = ""
 Facebook = ""
-Telegram = ""
 Medium = ""
 Gitlab = ""
 Youtubelegacy = ""
@@ -388,14 +388,14 @@ Email = ""
 RSS = true
 
 # custom social links like the following
-# [params.social.twitter]
-# id = "lruihao"
-# weight = 3
-# prefix = "https://twitter.com/"
-# Title = "Twitter"
+ [params.social.codewars]
+ id = "Artexxx"
+ weight = 3
+ prefix = "https://www.codewars.com/users/Artexxx"
+ Title = "CodeWars"
 
-# [params.social.twitter.icon]
-# class = "fa-brands fa-x-twitter fa-fw"
+ [params.social.twitter.icon]
+ class = "fa-brands fa-codewars fa-fw"
 
 # TypeIt config
 [typeit]
@@ -422,8 +422,8 @@ cdn = ""
 zenuml = ""
 # For values, see https://mermaid.js.org/config/theming.html#available-themes
 themes = [
-  "default",
-  "dark"
+    "default",
+    "dark"
 ]
 # FixIt 0.4.0 | NEW The security level for Mermaid diagrams
 # optional values: ["strict", "loose", "antiscript", "sandbox"]
@@ -911,7 +911,7 @@ cdn = "https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"
 # bold = ["{\\bf #1}", 1] # usage: $\bold{math}$
 
 [page.math.mathjax.loader]
-load = [ "ui/safe" ]
+load = ["ui/safe"]
 
 [page.math.mathjax.loader.paths]
 # custom = "https://cdn.jsdelivr.net/gh/sonoisa/XyJax-v3@3.0.1/build/"
@@ -922,16 +922,16 @@ load = [ "ui/safe" ]
 enableMenu = true
 # HTML tags that won't be searched for math
 skipHtmlTags = [
-  "script",
-  "noscript",
-  "style",
-  "textarea",
-  "pre",
-  "code",
-  "math",
-  "select",
-  "option",
-  "mjx-container"
+    "script",
+    "noscript",
+    "style",
+    "textarea",
+    "pre",
+    "code",
+    "math",
+    "select",
+    "option",
+    "mjx-container"
 ]
 # class that marks tags not to search
 ignoreHtmlClass = "mathjax_ignore"
@@ -965,8 +965,8 @@ enable = false
 count = 5
 # FixIt 0.3.20 | NEW position of related content, optional values: ["aside", "footer"]
 position = [
-  "aside",
-  "footer"
+    "aside",
+    "footer"
 ]
 
 # FixIt 0.2.17 | NEW Donate (Sponsor) settings
@@ -1067,9 +1067,9 @@ appKey = ""
 placeholder = ""
 avatar = "mp"
 meta = [
-  'nick',
-  'mail',
-  'link'
+    'nick',
+    'mail',
+    'link'
 ]
 requiredFields = []
 pageSize = 10
@@ -1093,11 +1093,11 @@ commentCount = true
 enable = false
 serverURL = ""
 pageview = false # FixIt 0.2.15 | NEW
-emoji = [ "//unpkg.com/@waline/emojis@1.1.0/weibo" ]
+emoji = ["//unpkg.com/@waline/emojis@1.1.0/weibo"]
 meta = [
-  "nick",
-  "mail",
-  "link"
+    "nick",
+    "mail",
+    "link"
 ]
 requiredMeta = []
 login = "enable"

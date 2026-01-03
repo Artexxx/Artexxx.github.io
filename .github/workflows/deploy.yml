@@ -82,3 +82,10 @@ jobs:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
+      - name: Update Algolia index
+        env:
+          ALGOLIA_APP_ID: MTJNHU0JVB
+          ALGOLIA_ADMIN_KEY: ${{ secrets.ALGOLIA_ADMIN_KEY }}
+          ALGOLIA_INDEX_NAME: 'index'
+          ALGOLIA_INDEX_FILE: './public/search.json'
+        run: pnpm algolia

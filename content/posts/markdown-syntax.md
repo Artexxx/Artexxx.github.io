@@ -17,6 +17,9 @@ collections:
   - Markdown Syntax
 lightgallery: true
 comment: true
+feed:
+  limit: 10
+  fullText: true
 ---
 
 This article offers a sample of basic Markdown syntax that can be used in Hugo content files.

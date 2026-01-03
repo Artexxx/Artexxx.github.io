@@ -4,18 +4,20 @@
 # -------------------------------------------------------------------------------------
 
 # Options to make hugo output files, the optional values are below:
-# home = ["html", "rss", "archives", "offline", "readme", "baidu_urls", "search"]
+# home = ["html", "rss", "atom", "jsonfeed", "archives", "offline", "readme", "baidu_urls", "search"]
 # page = ["html", "markdown"]
-# section = ["html", "rss"]
+# section = ["html", "rss", "jsonfeed"]
 # taxonomy = ["html"]
-# term = ["html", "rss"]
-
+# term = ["html", "rss", "jsonfeed"]
 _merge = "shallow"
 home = [
   "html",
   "rss",
+  "jsonfeed",
   "archives",
   "offline",
+  "readme",
+  "baidu_urls",
   "search"
 ]
 page = [
@@ -24,10 +26,12 @@ page = [
 ]
 section = [
   "html",
-  "rss"
+  "rss",
+  "jsonfeed"
 ]
 taxonomy = [ "html" ]
 term = [
   "html",
-  "rss"
+  "rss",
+  "jsonfeed"
 ]

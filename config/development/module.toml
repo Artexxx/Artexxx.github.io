@@ -9,6 +9,12 @@ path = "github.com/hugo-fixit/FixIt"
 [[imports]]
 path = "github.com/hugo-fixit/shortcode-docs-bookmark"
 
+[[imports]]
+path = "github.com/hugo-fixit/hugo-atom-feed"
+
+[[imports]]
+path = "github.com/hugo-fixit/hugo-json-feed"
+
 [hugoVersion]
 extended = true
 min = "0.147.7"

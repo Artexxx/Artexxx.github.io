@@ -6,8 +6,7 @@ echo "1. post"
 echo "2. server"
 echo "3. server:production"
 echo "4. build"
-echo "5. submodule-sync"
-echo "6. push"
+echo "5. push"
 echo "--------------------------------------"
 echo "Press Ctrl+C to stop"
 
@@ -26,9 +25,6 @@ case $num in
     hugo -v --gc --minify --source=../
     ;;
   5)
-    sh submodule_sync.sh
-    ;;
-  6)
     sh auto_push.sh
     ;;
   *)
