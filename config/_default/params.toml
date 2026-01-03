@@ -443,7 +443,7 @@ layoutLoaders = []
 layout = "dagre"
 
 # FixIt 0.3.13 | NEW Admonitions custom config
-# See https://fixit.lruihao.cn/documentation/content-management/shortcodes/extended/admonition/#custom-admonitions
+# See https://fixit.lruihao.cn/shortcodes/extended/admonition/#custom-admonitions
 # syntax: <type> = <icon>
 [admonition]
 # ban = "fa-solid fa-ban"
@@ -754,7 +754,6 @@ profile = [
     "custom/profile.html",
 ]
 aside = [
-    "custom/aside.html",
 ]
 comment = []
 footer = []
@@ -773,7 +772,7 @@ postFooterAfter = [
 # Select the scope named `public_repo` to generate personal access token,
 # Configure with environment variable `HUGO_PARAMS_GHTOKEN=xxx`, see https://gohugo.io/functions/os/getenv/#examples
 [dev]
-enable = false
+enable = true
 # Check for updates
 c4u = false
 
@@ -827,11 +826,11 @@ readingTime = true
 # FixIt 0.2.17 | NEW end of post flag
 endFlag = ""
 # FixIt 0.2.18 | NEW whether to enable instant.page
-instantPage = false
+instantPage = true
 # FixIt 0.3.0 | NEW whether to enable collection list at the sidebar
-collectionList = false
+collectionList = true
 # FixIt 0.3.0 | NEW whether to enable collection navigation at the end of the post
-collectionNavigation = false
+collectionNavigation = true
 
 # FixIt 0.2.15 | NEW Repost config
 [page.repost]
@@ -969,7 +968,7 @@ fullscreen = true
 
 # FixIt 0.3.0 | NEW Related content config (https://gohugo.io/content-management/related/)
 [page.related]
-enable = false
+enable = true
 count = 5
 # FixIt 0.3.20 | NEW position of related content, optional values: ["aside", "footer"]
 position = [

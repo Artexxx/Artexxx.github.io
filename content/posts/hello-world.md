@@ -3,7 +3,6 @@ title: Hello World
 date: 2026-01-03T13:26:50.526Z
 tags:
 - hello
-- FixIt
 categories:
 - hello
 # See details front matter: https://fixit.lruihao.cn/documentation/content-management/introduction/#front-matter
