@@ -28,6 +28,7 @@
   },
   "dependencies": {
     "atomic-algolia": "^0.3.19",
+    "pnpm": "^10.27.0",
     "qcloud-cdn-node-sdk": "^1.0.0"
   },
   "devDependencies": {
