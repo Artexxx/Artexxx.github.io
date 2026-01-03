@@ -34,10 +34,7 @@ If you’d like to follow updates, you can subscribe via **GitHub** or **RSS**.
 {{< style "min-height: 350px;" >}}
 {{< typeit code=golang speed=20 >}}
 
-// ┌───────────────────────────────────────────────────────────────┐
-// │ High-load IAM • Go microservices • gRPC • Kafka • PostgreSQL │
-// └───────────────────────────────────────────────────────────────┘
-
+// High-load IAM • Go microservices • gRPC • Kafka • PostgreSQL
 func main() {
   blog, err := NewBlog().
     Name("Artexxx Blog").

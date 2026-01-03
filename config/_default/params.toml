@@ -8,7 +8,7 @@ version = "0.4.X" # e.g. "0.2.X", "0.2.15", "v0.2.15" etc.
 # site description
 description = ""
 # site keywords
-keywords = []
+keywords = ["Artexxx", "Blog", "Go", "Hugo"]
 # site default theme ["light", "dark", "auto"]
 defaultTheme = "auto"
 # which hash function used for SRI, when empty, no SRI is used
@@ -17,11 +17,11 @@ fingerprint = ""
 # date format
 dateFormat = "2006-01-02"
 # website images for Open Graph and Twitter Cards
-images = []
+images = ["/images/preview.webp"]
 # FixIt 0.2.12 | NEW enable PWA
-enablePWA = false
+enablePWA = true
 # FixIt 0.2.14 | NEW whether to add external Icon for external links automatically
-externalIcon = false
+externalIcon = true
 # FixIt 0.3.13 | NEW whether to capitalize titles
 capitalizeTitles = true
 # FixIt 0.3.0 | NEW whether to add site title to the title of every page
@@ -31,7 +31,7 @@ withSiteTitle = true
 titleDelimiter = "-"
 # FixIt 0.3.0 | NEW whether to add site subtitle to the title of index page
 # remember to set up your site subtitle by `params.header.subtitle.name`
-indexWithSubtitle = false
+indexWithSubtitle = true
 # FixIt 0.3.13 | NEW whether to show summary in plain text
 summaryPlainify = false
 # FixIt 0.4.0 | NEW whether to enable merging missing translations from other languages
@@ -45,15 +45,15 @@ disableThemeInject = false
 
 # Author Configuration
 [author]
-name = ""
-email = ""
-link = ""
-avatar = ""
+name = "Artexxx"
+email = "otboynik50@gmail.com"
+link = "https://github.com/Artexxx"
+avatar = "/images/author.jpeg"
 
 # FixIt 0.3.0 | NEW public Git repository information only then enableGitInfo is true
 [gitInfo]
 # e.g. "https://github.com/hugo-fixit/docs"
-repo = ""
+repo = "https://github.com/Artexxx/Artexxx.github.io"
 branch = "main"
 # the content directory path relative to the root of the repository
 dir = "content"
@@ -64,11 +64,11 @@ issueTpl = "title=[BUG]%20{title}&body=|Field|Value|%0A|-|-|%0A|Title|{title}|%0
 # App icon config
 [app]
 # optional site title override for the app when added to an iOS home screen or Android launcher
-title = "FixIt"
+title = "Blog"
 # whether to omit favicon resource links
 noFavicon = false
 # modern SVG favicon to use in place of older style .png and .ico files
-svgFavicon = ""
+svgFavicon = "/images/logo.svg"
 # Safari mask icon color
 iconColor = "#5bbad5"
 # Windows v8-10 tile color
@@ -119,14 +119,14 @@ ignoreFieldNorm = false
 # FixIt 0.3.16 | NEW Custom Search Engine (CSE)
 [cse]
 # Search Engine: ["google", "bing"]
-engine = ""
+engine = "google"
 # Search results page URL (layout: search)
 resultsPage = "/search/"
 
 # Google: https://programmablesearchengine.google.com/
 # Google Custom Search Engine Context
 [cse.google]
-cx = ""
+cx = "04183137da3a446c0"
 
 # Bing (Unsupported): https://www.customsearch.ai/
 [cse.bing]
@@ -143,7 +143,7 @@ mobileMode = "auto"
 # URL of the LOGO
 logo = "/images/logo.svg"
 # title name
-name = ""
+name = "Blog"
 # you can add extra information before the name (HTML format is supported), such as icons
 pre = ""
 # you can add extra information after the name (HTML format is supported), such as icons
@@ -745,11 +745,17 @@ boxed = true
 # Custom partials must be stored in the /layouts/_partials/ directory.
 # Depends on open custom blocks https://fixit.lruihao.cn/references/blocks/
 [customPartials]
-head = []
+head = [
+    "custom/page-style.html",
+]
 menuDesktop = []
 menuMobile = []
-profile = []
-aside = []
+profile = [
+    "custom/profile.html",
+]
+aside = [
+    "custom/aside.html",
+]
 comment = []
 footer = []
 widgets = []
@@ -759,7 +765,9 @@ postTocAfter = []
 postContentBefore = []
 postContentAfter = []
 postFooterBefore = []
-postFooterAfter = []
+postFooterAfter = [
+    "custom/post-footer-after.html",
+]
 
 # FixIt 0.2.15 | NEW Developer options
 # Select the scope named `public_repo` to generate personal access token,
