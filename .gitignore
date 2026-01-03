@@ -3,6 +3,7 @@ build/
 public/
 resources/
 
+.idea/
 .hugo_build.lock
 _vendor
 jsconfig.json
