@@ -95,7 +95,6 @@ jobs:
           # Upload only the public directory
           path: './public'
 
-
   # Deployment job
   deploy:
     environment:
