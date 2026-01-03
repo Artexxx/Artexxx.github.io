@@ -13,7 +13,7 @@ title = "Artexxx Blog"
 [header]
 
 [header.title]
-logo = "/hugo-fixit-starter/images/fixit.min.svg"
+logo = "/images/logo.svg"
 
 [home]
 

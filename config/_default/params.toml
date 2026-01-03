@@ -141,7 +141,7 @@ mobileMode = "auto"
 # Header title config
 [header.title]
 # URL of the LOGO
-logo = "/images/fixit.min.svg"
+logo = "/images/logo.svg"
 # title name
 name = ""
 # you can add extra information before the name (HTML format is supported), such as icons
@@ -297,7 +297,7 @@ paginate = 6
 
 # FixIt 0.2.16 | CHANGED Social config about the author
 [social]
-GitHub = ""
+GitHub = "https://github.com/Artexxx"
 Linkedin = ""
 Twitter = ""
 Instagram = ""
@@ -591,8 +591,8 @@ objectFit = false
 
 # FixIt 0.2.14 | NEW GitHub banner in the top-right or top-left corner
 [githubCorner]
-enable = false
-permalink = "https://github.com/hugo-fixit/FixIt"
+enable = true
+permalink = "https://github.com/Artexxx"
 title = "View source on GitHub"
 position = "right" # ["left", "right"]
 
@@ -989,14 +989,15 @@ mode = "static"
 [page.share]
 enable = true
 Twitter = true
-Facebook = true
-Linkedin = false
+Facebook = false
+Linkedin = true
 Whatsapp = false
 Pinterest = false
 Tumblr = false
+Telegram = true
 HackerNews = false
 Reddit = false
-VK = false
+VK = true
 Buffer = false
 Xing = false
 Line = false
@@ -1015,7 +1016,7 @@ Mix = false
 
 # FixIt 0.2.15 | CHANGED Comment config
 [page.comment]
-enable = false
+enable = true
 
 # FixIt 0.2.13 | NEW Artalk comment config (https://artalk.js.org/)
 [page.comment.artalk]
@@ -1160,22 +1161,24 @@ katex = false
 
 # FixIt 0.2.14 | NEW Giscus comments config
 [page.comment.giscus]
-enable = false
-repo = ""
-repoId = ""
-category = ""
-categoryId = ""
-mapping = ""
+enable = true
+repo = "Artexxx/Artexxx.github.io"
+repoId = "R_kgDOK_NUFQ"
+category = "Announcements"
+categoryId = "DIC_kwDOK_NUFc4CcHDw"
+mapping = "pathname"
 origin = "https://giscus.app" # FixIt NEW | 0.3.7 Or set it to your self-hosted domain
 strict = "0" # FixIt NEW | 0.2.18
 term = ""
 reactionsEnabled = "1"
 emitMetadata = "0"
 inputPosition = "bottom" # ["top", "bottom"]
-lang = ""
+lang = "en"
 lightTheme = "light"
 darkTheme = "dark"
 lazyLoad = true
+crossorigin = "anonymous"
+
 
 # Third-party library config
 [page.library]

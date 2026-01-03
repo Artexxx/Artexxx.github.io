@@ -1,4 +1,4 @@
-# Spinach Harvests the Best
+# Blog
 
 [![Hugo](https://img.shields.io/badge/Hugo-%5E0.146.0-ff4088?style=flat\&logo=hugo)](https://gohugo.io/)
 [![Hugo build and deploy](https://github.com/Artexxx/Artexxx.github.io/actions/workflows/deploy.yml/badge.svg?branch=main)](https://github.com/Artexxx/Artexxx.github.io/actions/workflows/deploy.yml)

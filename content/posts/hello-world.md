@@ -7,6 +7,7 @@ tags:
 categories:
 - hello
 # See details front matter: https://fixit.lruihao.cn/documentation/content-management/introduction/#front-matter
+comment: true
 ---
 
 Welcome to Artexxx blog! This is your very first post.
