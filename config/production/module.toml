@@ -15,6 +15,9 @@ path = "github.com/hugo-fixit/hugo-atom-feed"
 [[imports]]
 path = "github.com/hugo-fixit/hugo-json-feed"
 
+[[imports]]
+path = "github.com/Artexxx/cmpt-post-preview"
+
 [hugoVersion]
 extended = true
 min = "0.147.7"

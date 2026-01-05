@@ -1,7 +1,9 @@
-github.com/hugo-fixit/FixIt v0.3.20 h1:XOfaPj3kmHpA94aPAjj4qGzffWCdNdmorihgH3/1jQg=
-github.com/hugo-fixit/FixIt v0.3.20/go.mod h1:3XIRedrqakO7/a4ZnhE46haMRF8HgsT0N0B5j5D2iRU=
-github.com/hugo-fixit/FixIt v0.4.0-rc.0.20260103125637-d637c8b22fc6 h1:dnKGjWBXFwQdHO2VZYlME3cthoKz3VYEwrja7qk6tT8=
-github.com/hugo-fixit/FixIt v0.4.0-rc.0.20260103125637-d637c8b22fc6/go.mod h1:3XIRedrqakO7/a4ZnhE46haMRF8HgsT0N0B5j5D2iRU=
+github.com/Artexxx/cmpt-post-preview v1.0.0 h1:Sqr5mT6rwqJZcrRAN6qlCN8Acgv3fYbeLfeP9C162Ek=
+github.com/Artexxx/cmpt-post-preview v1.0.0/go.mod h1:xkq0JeSg8Sx1XDVJv1NJh4t71rgmGfGWzk7Aybzw8zY=
+github.com/hugo-fixit/FixIt v0.4.0 h1:Grs7Se4vLzEuyONZJ/ed9XJQvbGeZ5XDfwF0oXc2MfQ=
+github.com/hugo-fixit/FixIt v0.4.0/go.mod h1:3XIRedrqakO7/a4ZnhE46haMRF8HgsT0N0B5j5D2iRU=
+github.com/hugo-fixit/FixIt v0.4.1-0.20260105065852-fb300f2b161e h1:7CHsyEjK2opooTJ4IwxWBGm+xvbdbnBK1dZsnsrfg0s=
+github.com/hugo-fixit/FixIt v0.4.1-0.20260105065852-fb300f2b161e/go.mod h1:3XIRedrqakO7/a4ZnhE46haMRF8HgsT0N0B5j5D2iRU=
 github.com/hugo-fixit/hugo-atom-feed v1.3.1 h1:zR27plOr4DJEwK8amHdzVthoQLTb6truUYWLDRVDRXY=
 github.com/hugo-fixit/hugo-atom-feed v1.3.1/go.mod h1:VL3kInxTH5EL+XjEhpo0ZW44fDhq6TI0qlKTFihg5hk=
 github.com/hugo-fixit/hugo-json-feed v1.3.1 h1:WUeynNiYZm4i8t7V2LS3fLv03T0u6sOdJOdHGg3500U=

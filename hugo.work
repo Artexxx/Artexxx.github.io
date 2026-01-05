@@ -1,8 +1,8 @@
-go 1.19
+go 1.20
 
 use .
 use ../FixIt
 use ../shortcode-docs-bookmark
 use ../hugo-json-feed
 use ../hugo-atom-feed
-
+use ../cmpt-post-preview

@@ -4,6 +4,7 @@ date: 2026-01-03T16:00:00+03:00
 comment: false
 twemoji: false
 lightgallery: false
+typeit: true
 ---
 
 {{< center-quote >}}
@@ -32,8 +33,7 @@ This blog is my place for notes and write-ups on software engineering: system de
 If you’d like to follow updates, you can subscribe via **GitHub** or **RSS**.
 
 {{< style "min-height: 350px;" >}}
-{{< typeit code=golang speed=20 >}}
-
+{{< typeit code=golang speed=20 class="terminal" cursorChar="█" >}}
 // High-load IAM • Go microservices • gRPC • Kafka • PostgreSQL
 func main() {
   blog, err := NewBlog().
@@ -49,8 +49,7 @@ func main() {
     Since(time.Date(2026, 1, 3, 0, 0, 0, 0, time.UTC)).
     Build()
 }
-
 {{< /typeit >}}
 {{< /style >}}
 
-<!-- markdownlint-disable-file MD004 MD007 MD032 MD036 -->
+---

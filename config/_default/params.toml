@@ -143,11 +143,11 @@ mobileMode = "auto"
 # URL of the LOGO
 logo = "/images/logo.svg"
 # title name
-name = "Blog"
+name = "Artexxx"
 # you can add extra information before the name (HTML format is supported), such as icons
 pre = ""
 # you can add extra information after the name (HTML format is supported), such as icons
-post = ""
+post = "Blog"
 # whether to use typeit animation for title name
 typeit = false
 
@@ -758,7 +758,10 @@ aside = [
 comment = []
 footer = []
 widgets = []
-assets = []
+assets = [
+    "custom/use-assets.html",
+    "inject/cmpt-post-preview.html",
+]
 postTocBefore = []
 postTocAfter = []
 postContentBefore = []
@@ -1211,3 +1214,22 @@ images = []
 [page.seo.publisher]
 name = ""
 logoUrl = ""
+
+[postPreview]
+enable = true
+# Log to console
+debug = false
+# Disable on mobile/touch devices (also checks hover/pointer media queries)
+mobileBp = 900
+# Disable on "/" and "/<lang>/" home pages
+disableOnHome = true
+# Disable inside this container (e.g. homepage post list)
+excludeSelector = "body > div.wrapper > main > div.home"
+# Hover timings
+showDelay = 120
+hideDelay = 220
+# Crop top part of the preview by shifting iframe content up
+cropTopPx = 60
+# If true: load tippy/popper from unpkg CDN
+# If false: use local assets/*
+tippyFromCdn = true
