@@ -6,3 +6,4 @@ use ../shortcode-docs-bookmark
 use ../hugo-json-feed
 use ../hugo-atom-feed
 use ../cmpt-post-preview
+use ../shortcode-asciinema

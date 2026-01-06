@@ -18,6 +18,9 @@ path = "github.com/hugo-fixit/hugo-json-feed"
 [[imports]]
 path = "github.com/Artexxx/cmpt-post-preview"
 
+[[imports]]
+path = "github.com/hugo-fixit/shortcode-asciinema"
+
 [hugoVersion]
 extended = true
 min = "0.147.7"

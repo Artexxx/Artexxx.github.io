@@ -17,9 +17,9 @@ path = "github.com/hugo-fixit/hugo-json-feed"
 
 [[imports]]
 path = "github.com/Artexxx/cmpt-post-preview"
-[[module.mounts]]
-source = "cmpt-post-preview/layouts"
-target = "layouts"
+
+[[imports]]
+path = "github.com/hugo-fixit/shortcode-asciinema"
 
 [hugoVersion]
 extended = true

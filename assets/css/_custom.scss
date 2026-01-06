@@ -1,11 +1,8 @@
 // ==============================
 // Custom style
 // ==============================
-// ==============================
-// Custom style
-// ==============================
 
-$blog-base-color: #dadde0 !default;
+$blog-base-color: #f6f8fa !default;
 $blog-bg-color: #fafaf8 !default;
 
 :root {
@@ -128,19 +125,6 @@ $blog-bg-color: #fafaf8 !default;
     margin-top: 1rem;
   }
 }
-
-//// Custom font
-//@font-face {
-//  font-family: MMT_H;
-//  src: url('/fonts/mmt_header.ttf');
-//  font-display: swap;
-//}
-//
-//@font-face {
-//  font-family: MMT_LRH;
-//  src: url('/fonts/mmt_sign.ttf');
-//  font-display: swap;
-//}
 
 // ==============================
 // Not mobile style
