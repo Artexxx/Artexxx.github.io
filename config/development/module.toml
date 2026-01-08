@@ -16,10 +16,13 @@ path = "github.com/hugo-fixit/hugo-atom-feed"
 path = "github.com/hugo-fixit/hugo-json-feed"
 
 [[imports]]
+path = "github.com/hugo-fixit/shortcode-asciinema"
+
+[[imports]]
 path = "github.com/Artexxx/cmpt-post-preview"
 
 [[imports]]
-path = "github.com/hugo-fixit/shortcode-asciinema"
+path = "github.com/Artexxx/cmpt-graph-view"
 
 [hugoVersion]
 extended = true

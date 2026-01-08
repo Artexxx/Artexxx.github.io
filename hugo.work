@@ -7,3 +7,5 @@ use ../hugo-json-feed
 use ../hugo-atom-feed
 use ../cmpt-post-preview
 use ../shortcode-asciinema
+use ../cmpt-graph-view
+use ../cmpt-graph-view/hugo-graph

@@ -6,7 +6,7 @@
 # website title
 title = "Artexxx blog"
 # Hostname (and path) to the root
-baseURL = "https://example.org/"
+baseURL = "https://artexxx.github.io/"
 # theme list
 # theme = ["FixIt"] # enable in your site config file
 # determines default content language ["en", "zh-cn", "fr", "pl", ...]

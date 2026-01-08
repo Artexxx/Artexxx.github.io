@@ -1,0 +1,392 @@
+{
+  "content": {
+    "/about": {
+      "title": "About"
+    },
+    "/collections/project": {
+      "title": "Open Source"
+    },
+    "/collections/shortcodes": {
+      "title": "Hugo Shortcodes"
+    },
+    "/posts/hello-world": {
+      "title": "Hello World"
+    },
+    "/shortcodes": {
+      "title": "Theme Documentation"
+    },
+    "/shortcodes/built-in": {
+      "title": "Built-in Shortcodes"
+    },
+    "/shortcodes/extended": {
+      "title": "Extended Shortcodes"
+    },
+    "/shortcodes/extended/admonition": {
+      "title": "Extended Shortcode - admonition"
+    },
+    "/shortcodes/extended/douyin": {
+      "title": "Extended Shortcode - douyin"
+    },
+    "/shortcodes/extended/echarts": {
+      "title": "Extended Shortcode - echarts"
+    },
+    "/shortcodes/extended/gist": {
+      "title": "Extended Shortcode - gist"
+    },
+    "/shortcodes/extended/introduction": {
+      "title": "Extended Shortcodes Overview"
+    },
+    "/shortcodes/extended/mapbox": {
+      "title": "Extended Shortcode - mapbox"
+    },
+    "/shortcodes/extended/mermaid": {
+      "title": "Extended Shortcode - mermaid"
+    },
+    "/shortcodes/extended/music": {
+      "title": "Extended Shortcode - music"
+    },
+    "/shortcodes/extended/tabs": {
+      "title": "Extended Shortcode - tabs"
+    },
+    "/shortcodes/extended/timeline": {
+      "title": "Extended Shortcode - Timeline"
+    },
+    "/shortcodes/extended/typeit": {
+      "title": "Extended Shortcode - typeit"
+    }
+  },
+  "index": {
+    "links": {
+      "/shortcodes/built-in": [
+        {
+          "source": "/shortcodes/built-in",
+          "target": "/shortcodes/built-in",
+          "text": "relref"
+        },
+        {
+          "source": "/shortcodes/built-in",
+          "target": "/shortcodes/extended",
+          "text": "relref"
+        }
+      ],
+      "/shortcodes/extended/introduction": [
+        {
+          "source": "/shortcodes/extended/introduction",
+          "target": "/shortcodes/extended/admonition",
+          "text": "relref"
+        },
+        {
+          "source": "/shortcodes/extended/introduction",
+          "target": "/shortcodes/extended/admonition",
+          "text": "sc-admonition"
+        },
+        {
+          "source": "/shortcodes/extended/introduction",
+          "target": "/shortcodes/extended/echarts",
+          "text": "relref"
+        },
+        {
+          "source": "/shortcodes/extended/introduction",
+          "target": "/shortcodes/extended/echarts",
+          "text": "sc-echarts"
+        },
+        {
+          "source": "/shortcodes/extended/introduction",
+          "target": "/shortcodes/extended/gist",
+          "text": "relref"
+        },
+        {
+          "source": "/shortcodes/extended/introduction",
+          "target": "/shortcodes/extended/gist",
+          "text": "sc-gist"
+        },
+        {
+          "source": "/shortcodes/extended/introduction",
+          "target": "/shortcodes/extended/mapbox",
+          "text": "relref"
+        },
+        {
+          "source": "/shortcodes/extended/introduction",
+          "target": "/shortcodes/extended/mapbox",
+          "text": "sc-mapbox"
+        },
+        {
+          "source": "/shortcodes/extended/introduction",
+          "target": "/shortcodes/extended/mermaid",
+          "text": "relref"
+        },
+        {
+          "source": "/shortcodes/extended/introduction",
+          "target": "/shortcodes/extended/mermaid",
+          "text": "sc-mermaid"
+        },
+        {
+          "source": "/shortcodes/extended/introduction",
+          "target": "/shortcodes/extended/music",
+          "text": "relref"
+        },
+        {
+          "source": "/shortcodes/extended/introduction",
+          "target": "/shortcodes/extended/music",
+          "text": "sc-music"
+        },
+        {
+          "source": "/shortcodes/extended/introduction",
+          "target": "/shortcodes/extended/tabs",
+          "text": "relref"
+        },
+        {
+          "source": "/shortcodes/extended/introduction",
+          "target": "/shortcodes/extended/tabs",
+          "text": "sc-tabs"
+        },
+        {
+          "source": "/shortcodes/extended/introduction",
+          "target": "/shortcodes/extended/timeline",
+          "text": "relref"
+        },
+        {
+          "source": "/shortcodes/extended/introduction",
+          "target": "/shortcodes/extended/timeline",
+          "text": "sc-timeline"
+        },
+        {
+          "source": "/shortcodes/extended/introduction",
+          "target": "/shortcodes/extended/typeit",
+          "text": "relref"
+        },
+        {
+          "source": "/shortcodes/extended/introduction",
+          "target": "/shortcodes/extended/typeit",
+          "text": "sc-typeit"
+        }
+      ]
+    },
+    "backlinks": {
+      "/shortcodes/built-in": [
+        {
+          "source": "/shortcodes/built-in",
+          "target": "/shortcodes/built-in",
+          "text": "relref"
+        }
+      ],
+      "/shortcodes/extended": [
+        {
+          "source": "/shortcodes/built-in",
+          "target": "/shortcodes/extended",
+          "text": "relref"
+        }
+      ],
+      "/shortcodes/extended/admonition": [
+        {
+          "source": "/shortcodes/extended/introduction",
+          "target": "/shortcodes/extended/admonition",
+          "text": "relref"
+        },
+        {
+          "source": "/shortcodes/extended/introduction",
+          "target": "/shortcodes/extended/admonition",
+          "text": "sc-admonition"
+        }
+      ],
+      "/shortcodes/extended/echarts": [
+        {
+          "source": "/shortcodes/extended/introduction",
+          "target": "/shortcodes/extended/echarts",
+          "text": "relref"
+        },
+        {
+          "source": "/shortcodes/extended/introduction",
+          "target": "/shortcodes/extended/echarts",
+          "text": "sc-echarts"
+        }
+      ],
+      "/shortcodes/extended/gist": [
+        {
+          "source": "/shortcodes/extended/introduction",
+          "target": "/shortcodes/extended/gist",
+          "text": "relref"
+        },
+        {
+          "source": "/shortcodes/extended/introduction",
+          "target": "/shortcodes/extended/gist",
+          "text": "sc-gist"
+        }
+      ],
+      "/shortcodes/extended/mapbox": [
+        {
+          "source": "/shortcodes/extended/introduction",
+          "target": "/shortcodes/extended/mapbox",
+          "text": "relref"
+        },
+        {
+          "source": "/shortcodes/extended/introduction",
+          "target": "/shortcodes/extended/mapbox",
+          "text": "sc-mapbox"
+        }
+      ],
+      "/shortcodes/extended/mermaid": [
+        {
+          "source": "/shortcodes/extended/introduction",
+          "target": "/shortcodes/extended/mermaid",
+          "text": "relref"
+        },
+        {
+          "source": "/shortcodes/extended/introduction",
+          "target": "/shortcodes/extended/mermaid",
+          "text": "sc-mermaid"
+        }
+      ],
+      "/shortcodes/extended/music": [
+        {
+          "source": "/shortcodes/extended/introduction",
+          "target": "/shortcodes/extended/music",
+          "text": "relref"
+        },
+        {
+          "source": "/shortcodes/extended/introduction",
+          "target": "/shortcodes/extended/music",
+          "text": "sc-music"
+        }
+      ],
+      "/shortcodes/extended/tabs": [
+        {
+          "source": "/shortcodes/extended/introduction",
+          "target": "/shortcodes/extended/tabs",
+          "text": "relref"
+        },
+        {
+          "source": "/shortcodes/extended/introduction",
+          "target": "/shortcodes/extended/tabs",
+          "text": "sc-tabs"
+        }
+      ],
+      "/shortcodes/extended/timeline": [
+        {
+          "source": "/shortcodes/extended/introduction",
+          "target": "/shortcodes/extended/timeline",
+          "text": "relref"
+        },
+        {
+          "source": "/shortcodes/extended/introduction",
+          "target": "/shortcodes/extended/timeline",
+          "text": "sc-timeline"
+        }
+      ],
+      "/shortcodes/extended/typeit": [
+        {
+          "source": "/shortcodes/extended/introduction",
+          "target": "/shortcodes/extended/typeit",
+          "text": "relref"
+        },
+        {
+          "source": "/shortcodes/extended/introduction",
+          "target": "/shortcodes/extended/typeit",
+          "text": "sc-typeit"
+        }
+      ]
+    }
+  },
+  "links": [
+    {
+      "source": "/shortcodes/built-in",
+      "target": "/shortcodes/built-in",
+      "text": "relref"
+    },
+    {
+      "source": "/shortcodes/built-in",
+      "target": "/shortcodes/extended",
+      "text": "relref"
+    },
+    {
+      "source": "/shortcodes/extended/introduction",
+      "target": "/shortcodes/extended/admonition",
+      "text": "relref"
+    },
+    {
+      "source": "/shortcodes/extended/introduction",
+      "target": "/shortcodes/extended/admonition",
+      "text": "sc-admonition"
+    },
+    {
+      "source": "/shortcodes/extended/introduction",
+      "target": "/shortcodes/extended/echarts",
+      "text": "relref"
+    },
+    {
+      "source": "/shortcodes/extended/introduction",
+      "target": "/shortcodes/extended/echarts",
+      "text": "sc-echarts"
+    },
+    {
+      "source": "/shortcodes/extended/introduction",
+      "target": "/shortcodes/extended/gist",
+      "text": "relref"
+    },
+    {
+      "source": "/shortcodes/extended/introduction",
+      "target": "/shortcodes/extended/gist",
+      "text": "sc-gist"
+    },
+    {
+      "source": "/shortcodes/extended/introduction",
+      "target": "/shortcodes/extended/mapbox",
+      "text": "relref"
+    },
+    {
+      "source": "/shortcodes/extended/introduction",
+      "target": "/shortcodes/extended/mapbox",
+      "text": "sc-mapbox"
+    },
+    {
+      "source": "/shortcodes/extended/introduction",
+      "target": "/shortcodes/extended/mermaid",
+      "text": "relref"
+    },
+    {
+      "source": "/shortcodes/extended/introduction",
+      "target": "/shortcodes/extended/mermaid",
+      "text": "sc-mermaid"
+    },
+    {
+      "source": "/shortcodes/extended/introduction",
+      "target": "/shortcodes/extended/music",
+      "text": "relref"
+    },
+    {
+      "source": "/shortcodes/extended/introduction",
+      "target": "/shortcodes/extended/music",
+      "text": "sc-music"
+    },
+    {
+      "source": "/shortcodes/extended/introduction",
+      "target": "/shortcodes/extended/tabs",
+      "text": "relref"
+    },
+    {
+      "source": "/shortcodes/extended/introduction",
+      "target": "/shortcodes/extended/tabs",
+      "text": "sc-tabs"
+    },
+    {
+      "source": "/shortcodes/extended/introduction",
+      "target": "/shortcodes/extended/timeline",
+      "text": "relref"
+    },
+    {
+      "source": "/shortcodes/extended/introduction",
+      "target": "/shortcodes/extended/timeline",
+      "text": "sc-timeline"
+    },
+    {
+      "source": "/shortcodes/extended/introduction",
+      "target": "/shortcodes/extended/typeit",
+      "text": "relref"
+    },
+    {
+      "source": "/shortcodes/extended/introduction",
+      "target": "/shortcodes/extended/typeit",
+      "text": "sc-typeit"
+    }
+  ]
+}

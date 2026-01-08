@@ -1,3 +1,7 @@
+github.com/Artexxx/cmpt-graph-view v1.0.0 h1:VbhRXqIkPnwZghDM8Po0iafzf46/34adJAi8zbzZ0HE=
+github.com/Artexxx/cmpt-graph-view v1.0.0/go.mod h1:sb1+tfuaxmuBZHCFgrPkaBF7oSNzfA3KNA+NesUclx0=
+github.com/Artexxx/cmpt-graph-view/hugo-graph v0.0.0-20260108130217-57916e081d9a h1:Cmh7atwvs3mgw9b6IpOihNZ0n7FKBAoHKqhJrPLQSlE=
+github.com/Artexxx/cmpt-graph-view/hugo-graph v0.0.0-20260108130217-57916e081d9a/go.mod h1:GYfGUaOOL4G4qn7BO6JFV+y5H6yev7pWbZDrkF4EmpY=
 github.com/Artexxx/cmpt-post-preview v1.0.0 h1:Sqr5mT6rwqJZcrRAN6qlCN8Acgv3fYbeLfeP9C162Ek=
 github.com/Artexxx/cmpt-post-preview v1.0.0/go.mod h1:xkq0JeSg8Sx1XDVJv1NJh4t71rgmGfGWzk7Aybzw8zY=
 github.com/hugo-fixit/FixIt v0.4.1-0.20260105065852-fb300f2b161e h1:7CHsyEjK2opooTJ4IwxWBGm+xvbdbnBK1dZsnsrfg0s=

@@ -147,14 +147,14 @@ name = "Artexxx"
 # you can add extra information before the name (HTML format is supported), such as icons
 pre = ""
 # you can add extra information after the name (HTML format is supported), such as icons
-post = "Blog"
+post = ""
 # whether to use typeit animation for title name
 typeit = false
 
 # FixIt 0.2.12 | NEW Header subtitle config
 [header.subtitle]
 # subtitle name
-name = ""
+name = "Golang Developer ✿"
 # whether to use typeit animation for subtitle name
 typeit = false
 
@@ -761,12 +761,18 @@ widgets = []
 assets = [
     "custom/use-assets.html",
     "inject/cmpt-post-preview.html",
+    "inject/cmpt-graph-view.html",
 ]
-postTocBefore = []
-postTocAfter = []
+postTocBefore = [
+]
+postTocAfter = [
+    "custom/cmpt-graph-view.html",
+]
 postContentBefore = []
-postContentAfter = []
-postFooterBefore = []
+postContentAfter = [
+]
+postFooterBefore = [
+]
 postFooterAfter = [
     "custom/post-footer-after.html",
 ]
@@ -1233,3 +1239,13 @@ cropTopPx = 60
 # If true: load tippy/popper from unpkg CDN
 # If false: use local assets/*
 tippyFromCdn = true
+
+
+[params.graphView]
+# Master switch
+enable = true
+# Optional diagnostics in console
+debug = true
+# Disable on mobile / touch-like devices
+mobileBp = 900
+
