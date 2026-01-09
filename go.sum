@@ -1,7 +1,5 @@
 github.com/Artexxx/cmpt-graph-view v1.0.0 h1:VbhRXqIkPnwZghDM8Po0iafzf46/34adJAi8zbzZ0HE=
 github.com/Artexxx/cmpt-graph-view v1.0.0/go.mod h1:sb1+tfuaxmuBZHCFgrPkaBF7oSNzfA3KNA+NesUclx0=
-github.com/Artexxx/cmpt-post-preview v1.0.0 h1:Sqr5mT6rwqJZcrRAN6qlCN8Acgv3fYbeLfeP9C162Ek=
-github.com/Artexxx/cmpt-post-preview v1.0.0/go.mod h1:xkq0JeSg8Sx1XDVJv1NJh4t71rgmGfGWzk7Aybzw8zY=
 github.com/Artexxx/cmpt-post-preview v1.0.1 h1:iBTD3objF1lCHpIjeKebUgCpXLdnCZsaLjSVeE7yXrA=
 github.com/Artexxx/cmpt-post-preview v1.0.1/go.mod h1:xkq0JeSg8Sx1XDVJv1NJh4t71rgmGfGWzk7Aybzw8zY=
 github.com/hugo-fixit/FixIt v0.4.1 h1:sy/mPHWvdVzls1vgJDLEsUuv2UxEAtwO9MU2TuJwGmg=

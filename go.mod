@@ -1,8 +1,6 @@
 module github.com/Artexxx/Artexxx.github.io
 
-go 1.22
-
-toolchain go1.23.0
+go 1.23
 
 require (
 	github.com/Artexxx/cmpt-graph-view v1.0.0 // indirect
