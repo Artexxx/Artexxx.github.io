@@ -2,6 +2,8 @@ github.com/Artexxx/cmpt-graph-view v1.0.0 h1:VbhRXqIkPnwZghDM8Po0iafzf46/34adJAi
 github.com/Artexxx/cmpt-graph-view v1.0.0/go.mod h1:sb1+tfuaxmuBZHCFgrPkaBF7oSNzfA3KNA+NesUclx0=
 github.com/Artexxx/cmpt-post-preview v1.0.1 h1:iBTD3objF1lCHpIjeKebUgCpXLdnCZsaLjSVeE7yXrA=
 github.com/Artexxx/cmpt-post-preview v1.0.1/go.mod h1:xkq0JeSg8Sx1XDVJv1NJh4t71rgmGfGWzk7Aybzw8zY=
+github.com/Artexxx/shortcode-jupyter-notebook v1.0.0 h1:173JvlWqg7UQRZWPJQcvm0LK364GiMcpqB/3HQhDp44=
+github.com/Artexxx/shortcode-jupyter-notebook v1.0.0/go.mod h1:amnux6tk5rLlqAgPSIvYfwcNkHVbUKWQaHxaCpQkw3M=
 github.com/hugo-fixit/FixIt v0.4.1 h1:sy/mPHWvdVzls1vgJDLEsUuv2UxEAtwO9MU2TuJwGmg=
 github.com/hugo-fixit/FixIt v0.4.1/go.mod h1:3XIRedrqakO7/a4ZnhE46haMRF8HgsT0N0B5j5D2iRU=
 github.com/hugo-fixit/hugo-atom-feed v1.3.1 h1:zR27plOr4DJEwK8amHdzVthoQLTb6truUYWLDRVDRXY=

@@ -9,3 +9,4 @@ use ../cmpt-post-preview
 use ../shortcode-asciinema
 use ../cmpt-graph-view
 use ../cmpt-graph-view/hugo-graph
+use ../shortcode-jupyter-notebook

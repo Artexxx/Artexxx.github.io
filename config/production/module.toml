@@ -25,6 +25,9 @@ path = "github.com/Artexxx/cmpt-post-preview"
 [[imports]]
 path = "github.com/Artexxx/cmpt-graph-view"
 
+[[imports]]
+path = "github.com/Artexxx/shortcode-jupyter-notebook"
+
 [hugoVersion]
 extended = true
 min = "0.147.7"

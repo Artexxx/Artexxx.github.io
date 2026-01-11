@@ -12,6 +12,9 @@
     "/posts/hello-world": {
       "title": "Hello World"
     },
+    "/posts/links": {
+      "title": "Go Internals"
+    },
     "/shortcodes": {
       "title": "Theme Documentation"
     },
@@ -35,6 +38,9 @@
     },
     "/shortcodes/extended/introduction": {
       "title": "Extended Shortcodes Overview"
+    },
+    "/shortcodes/extended/ipynb": {
+      "title": "Extended Shortcode - Ipynb"
     },
     "/shortcodes/extended/mapbox": {
       "title": "Extended Shortcode - mapbox"
