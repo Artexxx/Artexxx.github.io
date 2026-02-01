@@ -8,7 +8,7 @@ version = "0.4.X" # e.g. "0.2.X", "0.2.15", "v0.2.15" etc.
 # site description
 description = ""
 # site keywords
-keywords = ["Artexxx", "Blog", "Go", "Hugo"]
+keywords = []
 # site default theme ["light", "dark", "auto"]
 defaultTheme = "auto"
 # which hash function used for SRI, when empty, no SRI is used
@@ -17,11 +17,11 @@ fingerprint = ""
 # date format
 dateFormat = "2006-01-02"
 # website images for Open Graph and Twitter Cards
-images = ["/images/preview.webp"]
+images = []
 # FixIt 0.2.12 | NEW enable PWA
-enablePWA = true
+enablePWA = false
 # FixIt 0.2.14 | NEW whether to add external Icon for external links automatically
-externalIcon = true
+externalIcon = false
 # FixIt 0.3.13 | NEW whether to capitalize titles
 capitalizeTitles = true
 # FixIt 0.3.0 | NEW whether to add site title to the title of every page
@@ -31,7 +31,7 @@ withSiteTitle = true
 titleDelimiter = "-"
 # FixIt 0.3.0 | NEW whether to add site subtitle to the title of index page
 # remember to set up your site subtitle by `params.header.subtitle.name`
-indexWithSubtitle = true
+indexWithSubtitle = false
 # FixIt 0.3.13 | NEW whether to show summary in plain text
 summaryPlainify = false
 # FixIt 0.4.0 | NEW whether to enable merging missing translations from other languages
@@ -45,15 +45,15 @@ disableThemeInject = false
 
 # Author Configuration
 [author]
-name = "Artexxx"
-email = "otboynik50@gmail.com"
-link = "https://github.com/Artexxx"
-avatar = "/images/author.jpeg"
+name = ""
+email = ""
+link = ""
+avatar = ""
 
 # FixIt 0.3.0 | NEW public Git repository information only then enableGitInfo is true
 [gitInfo]
 # e.g. "https://github.com/hugo-fixit/docs"
-repo = "https://github.com/Artexxx/Artexxx.github.io"
+repo = ""
 branch = "main"
 # the content directory path relative to the root of the repository
 dir = "content"
@@ -64,11 +64,11 @@ issueTpl = "title=[BUG]%20{title}&body=|Field|Value|%0A|-|-|%0A|Title|{title}|%0
 # App icon config
 [app]
 # optional site title override for the app when added to an iOS home screen or Android launcher
-title = "Blog"
+title = "FixIt"
 # whether to omit favicon resource links
 noFavicon = false
 # modern SVG favicon to use in place of older style .png and .ico files
-svgFavicon = "/images/logo.svg"
+svgFavicon = ""
 # Safari mask icon color
 iconColor = "#5bbad5"
 # Windows v8-10 tile color
@@ -81,9 +81,9 @@ dark = "#252627"
 
 # Search config
 [search]
-enable = true
+enable = false
 # type of search engine ["algolia", "fuse", "cse", "post-chat"]
-type = "algolia"
+type = "fuse"
 # max index length of the chunked content
 contentLength = 4000
 # placeholder of the search bar
@@ -100,9 +100,9 @@ absoluteURL = false
 anchorify = true
 
 [search.algolia]
-index = "index"
-appID = "WQZDH98A16"
-searchKey = "4d6f9858796be7bf2cef3487b5dc9849"
+index = ""
+appID = ""
+searchKey = ""
 
 # FixIt 0.2.17 | NEW https://fusejs.io/api/options.html
 [search.fuse]
@@ -119,14 +119,14 @@ ignoreFieldNorm = false
 # FixIt 0.3.16 | NEW Custom Search Engine (CSE)
 [cse]
 # Search Engine: ["google", "bing"]
-engine = "google"
+engine = ""
 # Search results page URL (layout: search)
 resultsPage = "/search/"
 
 # Google: https://programmablesearchengine.google.com/
 # Google Custom Search Engine Context
 [cse.google]
-cx = "04183137da3a446c0"
+cx = ""
 
 # Bing (Unsupported): https://www.customsearch.ai/
 [cse.bing]
@@ -141,9 +141,9 @@ mobileMode = "auto"
 # Header title config
 [header.title]
 # URL of the LOGO
-logo = "/images/logo.svg"
+logo = ""
 # title name
-name = "Artexxx"
+name = ""
 # you can add extra information before the name (HTML format is supported), such as icons
 pre = ""
 # you can add extra information after the name (HTML format is supported), such as icons
@@ -154,7 +154,7 @@ typeit = false
 # FixIt 0.2.12 | NEW Header subtitle config
 [header.subtitle]
 # subtitle name
-name = "Golang Developer ✿"
+name = ""
 # whether to use typeit animation for subtitle name
 typeit = false
 
@@ -297,12 +297,12 @@ paginate = 6
 
 # FixIt 0.2.16 | CHANGED Social config about the author
 [social]
-GitHub = "https://github.com/Artexxx"
-Linkedin = "www.linkedin.com/in/artexxx"
-Telegram = "https://t.me/Artem3XXX"
+GitHub = ""
+Linkedin = ""
 Twitter = ""
 Instagram = ""
 Facebook = ""
+Telegram = ""
 Medium = ""
 Gitlab = ""
 Youtubelegacy = ""
@@ -388,14 +388,14 @@ Email = ""
 RSS = true
 
 # custom social links like the following
- [params.social.codewars]
- id = "Artexxx"
- weight = 3
- prefix = "https://www.codewars.com/users/Artexxx"
- Title = "CodeWars"
+# [params.social.twitter]
+# id = "lruihao"
+# weight = 3
+# prefix = "https://twitter.com/"
+# Title = "Twitter"
 
- [params.social.twitter.icon]
- class = "fa-brands fa-codewars fa-fw"
+# [params.social.twitter.icon]
+# class = "fa-brands fa-x-twitter"
 
 # TypeIt config
 [typeit]
@@ -422,8 +422,8 @@ cdn = ""
 zenuml = ""
 # For values, see https://mermaid.js.org/config/theming.html#available-themes
 themes = [
-    "default",
-    "dark"
+  "default",
+  "dark"
 ]
 # FixIt 0.4.0 | NEW The security level for Mermaid diagrams
 # optional values: ["strict", "loose", "antiscript", "sandbox"]
@@ -443,7 +443,7 @@ layoutLoaders = []
 layout = "dagre"
 
 # FixIt 0.3.13 | NEW Admonitions custom config
-# See https://fixit.lruihao.cn/shortcodes/extended/admonition/#custom-admonitions
+# See https://fixit.lruihao.cn/documentation/content-management/shortcodes/extended/admonition/#custom-admonitions
 # syntax: <type> = <icon>
 [admonition]
 # ban = "fa-solid fa-ban"
@@ -591,8 +591,8 @@ objectFit = false
 
 # FixIt 0.2.14 | NEW GitHub banner in the top-right or top-left corner
 [githubCorner]
-enable = true
-permalink = "https://github.com/Artexxx"
+enable = false
+permalink = "https://github.com/hugo-fixit/FixIt"
 title = "View source on GitHub"
 position = "right" # ["left", "right"]
 
@@ -674,7 +674,7 @@ enable = false
 # If you set `params.postChat.key`, you don't need to set `params.postSummary.key`
 key = ""
 title = ""
-# themes options: ["", "simple", "yanzhi"]
+# themes options: ["", "simple", "yanzhi", "menghuan"]
 theme = ""
 postURL = ""
 blacklist = ""
@@ -682,6 +682,11 @@ wordLimit = 1000
 typingAnimate = true
 beginningText = ""
 loadingText = true
+
+# FixIt 0.4.0 | NEW Podcast AI config
+# See https://ai.zhheo.com/docs/podcast.html
+[podcast]
+enable = false
 
 # FixIt 0.3.10 | NEW Global Feed config for RSS, Atom and JSON feed.
 [feed]
@@ -741,49 +746,45 @@ copyable = true
 sort = false
 boxed = true
 
+# FixIt 0.4.2 | NEW File tree config
+# See https://fixit.lruihao.cn/documentation/content-management/shortcodes/extended/file-tree/
+[filetree]
+# the expand level of the tree (expand all: -1, collapse all: 0)
+level = 1
+# whether to append a trailing "/" to folder names
+folderSlash = false
+# list of file or folder names to ignore
+ignoreList = []
+
 # FixIt 0.3.12 | NEW Custom partials config
 # Custom partials must be stored in the /layouts/_partials/ directory.
 # Depends on open custom blocks https://fixit.lruihao.cn/references/blocks/
 [customPartials]
-head = [
-    "custom/page-style.html",
-]
+head = []
 menuDesktop = []
 menuMobile = []
-profile = [
-    "custom/profile.html",
-]
-aside = [
-]
+profile = []
+aside = []
 comment = []
 footer = []
 widgets = []
-assets = [
-    "custom/use-assets.html",
-    "inject/cmpt-post-preview.html",
-    "inject/cmpt-graph-view.html",
-]
-postTocBefore = [
-]
-postTocAfter = [
-    "custom/cmpt-graph-view.html",
-]
+assets = []
+postTocBefore = []
+postTocAfter = []
 postContentBefore = []
-postContentAfter = [
-]
-postFooterBefore = [
-]
-postFooterAfter = [
-    "custom/post-footer-after.html",
-]
+postContentAfter = []
+postFooterBefore = []
+postFooterAfter = []
 
 # FixIt 0.2.15 | NEW Developer options
 # Select the scope named `public_repo` to generate personal access token,
 # Configure with environment variable `HUGO_PARAMS_GHTOKEN=xxx`, see https://gohugo.io/functions/os/getenv/#examples
 [dev]
-enable = true
+enable = false
 # Check for updates
 c4u = false
+# FixIt 0.4.0 | NEW Enable debug mode
+debug = false
 
 # Page config
 # TODO migrate mapping key to `params` layer in the future
@@ -828,6 +829,8 @@ pageStyle = "normal"
 # FixIt 0.2.17 | CHANGED Auto Bookmark Support
 # If true, save the reading progress when closing the page.
 autoBookmark = false
+# FixIt 0.4.0 | NEW whether to show the last modified time
+showLastmod = true
 # FixIt 0.2.17 | NEW whether to enable wordCount
 wordCount = true
 # FixIt 0.2.17 | NEW whether to enable readingTime
@@ -835,11 +838,11 @@ readingTime = true
 # FixIt 0.2.17 | NEW end of post flag
 endFlag = ""
 # FixIt 0.2.18 | NEW whether to enable instant.page
-instantPage = true
+instantPage = false
 # FixIt 0.3.0 | NEW whether to enable collection list at the sidebar
-collectionList = true
+collectionList = false
 # FixIt 0.3.0 | NEW whether to enable collection navigation at the end of the post
-collectionNavigation = true
+collectionNavigation = false
 
 # FixIt 0.2.15 | NEW Repost config
 [page.repost]
@@ -927,7 +930,7 @@ cdn = "https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"
 # bold = ["{\\bf #1}", 1] # usage: $\bold{math}$
 
 [page.math.mathjax.loader]
-load = ["ui/safe"]
+load = [ "ui/safe" ]
 
 [page.math.mathjax.loader.paths]
 # custom = "https://cdn.jsdelivr.net/gh/sonoisa/XyJax-v3@3.0.1/build/"
@@ -938,16 +941,16 @@ load = ["ui/safe"]
 enableMenu = true
 # HTML tags that won't be searched for math
 skipHtmlTags = [
-    "script",
-    "noscript",
-    "style",
-    "textarea",
-    "pre",
-    "code",
-    "math",
-    "select",
-    "option",
-    "mjx-container"
+  "script",
+  "noscript",
+  "style",
+  "textarea",
+  "pre",
+  "code",
+  "math",
+  "select",
+  "option",
+  "mjx-container"
 ]
 # class that marks tags not to search
 ignoreHtmlClass = "mathjax_ignore"
@@ -977,12 +980,12 @@ fullscreen = true
 
 # FixIt 0.3.0 | NEW Related content config (https://gohugo.io/content-management/related/)
 [page.related]
-enable = true
+enable = false
 count = 5
 # FixIt 0.3.20 | NEW position of related content, optional values: ["aside", "footer"]
 position = [
-    "aside",
-    "footer"
+  "aside",
+  "footer"
 ]
 
 # FixIt 0.2.17 | NEW Donate (Sponsor) settings
@@ -1005,15 +1008,14 @@ mode = "static"
 [page.share]
 enable = true
 Twitter = true
-Facebook = false
-Linkedin = true
+Facebook = true
+Linkedin = false
 Whatsapp = false
 Pinterest = false
 Tumblr = false
-Telegram = true
 HackerNews = false
 Reddit = false
-VK = true
+VK = false
 Buffer = false
 Xing = false
 Line = false
@@ -1032,7 +1034,7 @@ Mix = false
 
 # FixIt 0.2.15 | CHANGED Comment config
 [page.comment]
-enable = true
+enable = false
 
 # FixIt 0.2.13 | NEW Artalk comment config (https://artalk.js.org/)
 [page.comment.artalk]
@@ -1083,9 +1085,9 @@ appKey = ""
 placeholder = ""
 avatar = "mp"
 meta = [
-    'nick',
-    'mail',
-    'link'
+  'nick',
+  'mail',
+  'link'
 ]
 requiredFields = []
 pageSize = 10
@@ -1109,11 +1111,11 @@ commentCount = true
 enable = false
 serverURL = ""
 pageview = false # FixIt 0.2.15 | NEW
-emoji = ["//unpkg.com/@waline/emojis@1.1.0/weibo"]
+emoji = [ "//unpkg.com/@waline/emojis@1.1.0/weibo" ]
 meta = [
-    "nick",
-    "mail",
-    "link"
+  "nick",
+  "mail",
+  "link"
 ]
 requiredMeta = []
 login = "enable"
@@ -1177,24 +1179,22 @@ katex = false
 
 # FixIt 0.2.14 | NEW Giscus comments config
 [page.comment.giscus]
-enable = true
-repo = "Artexxx/Artexxx.github.io"
-repoId = "R_kgDOK_NUFQ"
-category = "Announcements"
-categoryId = "DIC_kwDOK_NUFc4CcHDw"
-mapping = "pathname"
+enable = false
+repo = ""
+repoId = ""
+category = ""
+categoryId = ""
+mapping = ""
 origin = "https://giscus.app" # FixIt NEW | 0.3.7 Or set it to your self-hosted domain
 strict = "0" # FixIt NEW | 0.2.18
 term = ""
 reactionsEnabled = "1"
 emitMetadata = "0"
 inputPosition = "bottom" # ["top", "bottom"]
-lang = "en"
+lang = ""
 lightTheme = "light"
 darkTheme = "dark"
 lazyLoad = true
-crossorigin = "anonymous"
-
 
 # Third-party library config
 [page.library]
@@ -1220,32 +1220,3 @@ images = []
 [page.seo.publisher]
 name = ""
 logoUrl = ""
-
-[postPreview]
-enable = true
-# Log to console
-debug = false
-# Disable on mobile/touch devices (also checks hover/pointer media queries)
-mobileBp = 900
-# Disable on "/" and "/<lang>/" home pages
-disableOnHome = true
-# Disable inside this container (e.g. homepage post list)
-excludeSelector = "body > div.wrapper > main > div.home"
-# Hover timings
-showDelay = 120
-hideDelay = 220
-# Crop top part of the preview by shifting iframe content up
-cropTopPx = 60
-# If true: load tippy/popper from unpkg CDN
-# If false: use local assets/*
-tippyFromCdn = true
-
-
-[params.graphView]
-# Master switch
-enable = true
-# Optional diagnostics in console
-debug = true
-# Disable on mobile / touch-like devices
-mobileBp = 900
-
