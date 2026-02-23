@@ -297,9 +297,9 @@ paginate = 6
 
 # FixIt 0.2.16 | CHANGED Social config about the author
 [social]
-GitHub = "https://github.com/Artexxx"
-Linkedin = "www.linkedin.com/in/artexxx"
-Telegram = "https://t.me/Artem3XXX"
+GitHub = "Artexxx"
+Linkedin = "artexxx"
+Telegram = "Artem3XXX"
 Twitter = ""
 Instagram = ""
 Facebook = ""
@@ -386,16 +386,6 @@ Bluesky = ""
 Phone = ""
 Email = ""
 RSS = true
-
-# custom social links like the following
-[params.social.codewars]
-id = "Artexxx"
-weight = 3
-prefix = "https://www.codewars.com/users/Artexxx"
-Title = "CodeWars"
-
-# [params.social.twitter.icon]
-# class = "fa-brands fa-x-twitter"
 
 # TypeIt config
 [typeit]
