@@ -8,7 +8,7 @@ version = "0.4.X" # e.g. "0.2.X", "0.2.15", "v0.2.15" etc.
 # site description
 description = ""
 # site keywords
-keywords = []
+keywords = ["Artexxx", "Blog", "Go", "Hugo"]
 # site default theme ["light", "dark", "auto"]
 defaultTheme = "dark"
 # which hash function used for SRI, when empty, no SRI is used
@@ -17,11 +17,11 @@ fingerprint = ""
 # date format
 dateFormat = "2006-01-02"
 # website images for Open Graph and Twitter Cards
-images = []
+images = ["/images/preview.webp"]
 # FixIt 0.2.12 | NEW enable PWA
-enablePWA = false
+enablePWA = true
 # FixIt 0.2.14 | NEW whether to add external Icon for external links automatically
-externalIcon = false
+externalIcon = true
 # FixIt 0.3.13 | NEW whether to capitalize titles
 capitalizeTitles = true
 # FixIt 0.3.0 | NEW whether to add site title to the title of every page
@@ -31,7 +31,7 @@ withSiteTitle = true
 titleDelimiter = "-"
 # FixIt 0.3.0 | NEW whether to add site subtitle to the title of index page
 # remember to set up your site subtitle by `params.header.subtitle.name`
-indexWithSubtitle = false
+indexWithSubtitle = true
 # FixIt 0.3.13 | NEW whether to show summary in plain text
 summaryPlainify = false
 # FixIt 0.4.0 | NEW whether to enable merging missing translations from other languages
@@ -45,15 +45,15 @@ disableThemeInject = false
 
 # Author Configuration
 [author]
-name = ""
-email = ""
-link = ""
-avatar = ""
+name = "Artexxx"
+email = "otboynik50@gmail.com"
+link = "https://github.com/Artexxx"
+avatar = "/images/author.jpeg"
 
 # FixIt 0.3.0 | NEW public Git repository information only then enableGitInfo is true
 [gitInfo]
 # e.g. "https://github.com/hugo-fixit/docs"
-repo = ""
+repo = "https://github.com/Artexxx/Artexxx.github.io"
 branch = "main"
 # the content directory path relative to the root of the repository
 dir = "content"
@@ -64,11 +64,11 @@ issueTpl = "title=[BUG]%20{title}&body=|Field|Value|%0A|-|-|%0A|Title|{title}|%0
 # App icon config
 [app]
 # optional site title override for the app when added to an iOS home screen or Android launcher
-title = "FixIt"
+title = "Blog"
 # whether to omit favicon resource links
 noFavicon = false
 # modern SVG favicon to use in place of older style .png and .ico files
-svgFavicon = ""
+svgFavicon = "/images/logo.svg"
 # Safari mask icon color
 iconColor = "#5bbad5"
 # Windows v8-10 tile color
@@ -81,9 +81,9 @@ dark = "#252627"
 
 # Search config
 [search]
-enable = false
+enable = true
 # type of search engine ["algolia", "fuse", "cse", "post-chat"]
-type = "fuse"
+type = "algolia"
 # max index length of the chunked content
 contentLength = 4000
 # placeholder of the search bar
@@ -100,9 +100,9 @@ absoluteURL = false
 anchorify = true
 
 [search.algolia]
-index = ""
-appID = ""
-searchKey = ""
+index = "index"
+appID = "WQZDH98A16"
+searchKey = "4d6f9858796be7bf2cef3487b5dc9849"
 
 # FixIt 0.2.17 | NEW https://fusejs.io/api/options.html
 [search.fuse]
@@ -119,14 +119,14 @@ ignoreFieldNorm = false
 # FixIt 0.3.16 | NEW Custom Search Engine (CSE)
 [cse]
 # Search Engine: ["google", "bing"]
-engine = ""
+engine = "google"
 # Search results page URL (layout: search)
 resultsPage = "/search/"
 
 # Google: https://programmablesearchengine.google.com/
 # Google Custom Search Engine Context
 [cse.google]
-cx = ""
+cx = "04183137da3a446c0"
 
 # Bing (Unsupported): https://www.customsearch.ai/
 [cse.bing]
@@ -141,9 +141,9 @@ mobileMode = "auto"
 # Header title config
 [header.title]
 # URL of the LOGO
-logo = ""
+logo = "/images/logo.svg"
 # title name
-name = ""
+name = "Artexxx"
 # you can add extra information before the name (HTML format is supported), such as icons
 pre = ""
 # you can add extra information after the name (HTML format is supported), such as icons
@@ -154,7 +154,7 @@ typeit = false
 # FixIt 0.2.12 | NEW Header subtitle config
 [header.subtitle]
 # subtitle name
-name = ""
+name = "Golang Developer ✿"
 # whether to use typeit animation for subtitle name
 typeit = false
 
@@ -297,12 +297,12 @@ paginate = 6
 
 # FixIt 0.2.16 | CHANGED Social config about the author
 [social]
-GitHub = ""
-Linkedin = ""
+GitHub = "https://github.com/Artexxx"
+Linkedin = "www.linkedin.com/in/artexxx"
+Telegram = "https://t.me/Artem3XXX"
 Twitter = ""
 Instagram = ""
 Facebook = ""
-Telegram = ""
 Medium = ""
 Gitlab = ""
 Youtubelegacy = ""
@@ -388,11 +388,11 @@ Email = ""
 RSS = true
 
 # custom social links like the following
-# [params.social.twitter]
-# id = "lruihao"
-# weight = 3
-# prefix = "https://twitter.com/"
-# Title = "Twitter"
+[params.social.codewars]
+id = "Artexxx"
+weight = 3
+prefix = "https://www.codewars.com/users/Artexxx"
+Title = "CodeWars"
 
 # [params.social.twitter.icon]
 # class = "fa-brands fa-x-twitter"
@@ -585,14 +585,14 @@ data = ""
 [compatibility]
 # whether to use Polyfill.io on cdnjs to be compatible with older browsers
 # https://cdnjs.cloudflare.com/polyfill
-polyfill = false
+polyfill = true
 # whether to use object-fit-images to be compatible with older browsers
 objectFit = false
 
 # FixIt 0.2.14 | NEW GitHub banner in the top-right or top-left corner
 [githubCorner]
-enable = false
-permalink = "https://github.com/hugo-fixit/FixIt"
+enable = true
+permalink = "https://github.com/Artexxx"
 title = "View source on GitHub"
 position = "right" # ["left", "right"]
 
@@ -608,24 +608,24 @@ style = "" # ["", "mp", "identicon", "monsterid", "wavatar", "retro", "blank", "
 [backToTop]
 enable = true
 # FixIt 0.4.0 | CHANGED whether to show the scroll percent indicator around the back to top button
-scrollpercent = false
+scrollpercent = true
 
 # FixIt 0.2.16 | NEW Reading progress bar
 [readingProgress]
-enable = false
+enable = true
 # Available values: ["left", "right"]
 start = "left"
 # Available values: ["top", "bottom"]
 position = "top"
 reversed = false
-light = ""
-dark = ""
+light = "#8581dd"
+dark = "#fff"
 height = "2px"
 
 # FixIt 0.2.17 | NEW Progress bar in the top during page loading.
 # For more information: https://github.com/CodeByZach/pace
 [pace]
-enable = false
+enable = true
 # All available colors:
 # ["black", "blue", "green", "orange", "pink", "purple", "red", "silver", "white", "yellow"]
 color = "blue"
@@ -670,7 +670,7 @@ hotWords = true
 # FixIt 0.3.17 | NEW Summary AI config
 # See https://ai.zhheo.com/docs/summary.html
 [postSummary]
-enable = false
+enable = true
 # If you set `params.postChat.key`, you don't need to set `params.postSummary.key`
 key = ""
 title = ""
@@ -678,7 +678,7 @@ title = ""
 theme = ""
 postURL = ""
 blacklist = ""
-wordLimit = 1000
+wordLimit = 5000
 typingAnimate = true
 beginningText = ""
 loadingText = true
@@ -704,7 +704,7 @@ userId = ""
 # Combined with Hugo's image processing option `imaging` for image optimisation
 [image]
 # cache remote images for better optimisations
-cacheRemote = false
+cacheRemote = true
 # Image resizing and optimisation (may slow builds)
 optimise = false
 # FixIt 0.4.0 | NEW A list of image file names or patterns to exclude from optimisation
@@ -760,27 +760,43 @@ ignoreList = []
 # Custom partials must be stored in the /layouts/_partials/ directory.
 # Depends on open custom blocks https://fixit.lruihao.cn/references/blocks/
 [customPartials]
-head = []
+head = [
+    "custom/page-style.html",
+]
 menuDesktop = []
 menuMobile = []
-profile = []
-aside = []
+profile = [
+    "custom/profile.html",
+]
+aside = [
+]
 comment = []
 footer = []
 widgets = []
-assets = []
-postTocBefore = []
-postTocAfter = []
+assets = [
+    "custom/use-assets.html",
+    "inject/cmpt-post-preview.html",
+    "inject/cmpt-graph-view.html",
+]
+postTocBefore = [
+]
+postTocAfter = [
+    "custom/cmpt-graph-view.html",
+]
 postContentBefore = []
-postContentAfter = []
-postFooterBefore = []
-postFooterAfter = []
+postContentAfter = [
+]
+postFooterBefore = [
+]
+postFooterAfter = [
+    "custom/post-footer-after.html",
+]
 
 # FixIt 0.2.15 | NEW Developer options
 # Select the scope named `public_repo` to generate personal access token,
 # Configure with environment variable `HUGO_PARAMS_GHTOKEN=xxx`, see https://gohugo.io/functions/os/getenv/#examples
 [dev]
-enable = false
+enable = true
 # Check for updates
 c4u = false
 # FixIt 0.4.0 | NEW Enable debug mode
@@ -805,7 +821,7 @@ twemoji = false
 # set to true, images in the content will be shown as the gallery if the image has a title, e.g. ![alt](src "title")
 # set to "force", images in the content will be forced to shown as the gallery regardless of the image has a title or not, e.g. ![alt](src)
 # TODO change gallery engine in the future
-lightgallery = false
+lightgallery =  "force"
 # whether to enable the ruby extended syntax
 ruby = true
 # whether to enable the fraction extended syntax
@@ -838,11 +854,11 @@ readingTime = true
 # FixIt 0.2.17 | NEW end of post flag
 endFlag = ""
 # FixIt 0.2.18 | NEW whether to enable instant.page
-instantPage = false
+instantPage = true
 # FixIt 0.3.0 | NEW whether to enable collection list at the sidebar
-collectionList = false
+collectionList = true
 # FixIt 0.3.0 | NEW whether to enable collection navigation at the end of the post
-collectionNavigation = false
+collectionNavigation = true
 
 # FixIt 0.2.15 | NEW Repost config
 [page.repost]
@@ -980,7 +996,7 @@ fullscreen = true
 
 # FixIt 0.3.0 | NEW Related content config (https://gohugo.io/content-management/related/)
 [page.related]
-enable = false
+enable = true
 count = 5
 # FixIt 0.3.20 | NEW position of related content, optional values: ["aside", "footer"]
 position = [
@@ -1008,14 +1024,15 @@ mode = "static"
 [page.share]
 enable = true
 Twitter = true
-Facebook = true
-Linkedin = false
+Facebook = false
+Linkedin = true
 Whatsapp = false
 Pinterest = false
 Tumblr = false
+Telegram = true
 HackerNews = false
 Reddit = false
-VK = false
+VK = true
 Buffer = false
 Xing = false
 Line = false
@@ -1034,7 +1051,7 @@ Mix = false
 
 # FixIt 0.2.15 | CHANGED Comment config
 [page.comment]
-enable = false
+enable = true
 
 # FixIt 0.2.13 | NEW Artalk comment config (https://artalk.js.org/)
 [page.comment.artalk]
@@ -1179,22 +1196,24 @@ katex = false
 
 # FixIt 0.2.14 | NEW Giscus comments config
 [page.comment.giscus]
-enable = false
-repo = ""
-repoId = ""
-category = ""
-categoryId = ""
-mapping = ""
+enable = true
+repo = "Artexxx/Artexxx.github.io"
+repoId = "R_kgDOK_NUFQ"
+category = "Announcements"
+categoryId = "DIC_kwDOK_NUFc4CcHDw"
+mapping = "pathname"
 origin = "https://giscus.app" # FixIt NEW | 0.3.7 Or set it to your self-hosted domain
 strict = "0" # FixIt NEW | 0.2.18
 term = ""
 reactionsEnabled = "1"
 emitMetadata = "0"
 inputPosition = "bottom" # ["top", "bottom"]
-lang = ""
+lang = "en"
 lightTheme = "light"
 darkTheme = "dark"
 lazyLoad = true
+crossorigin = "anonymous"
+
 
 # Third-party library config
 [page.library]
@@ -1220,3 +1239,31 @@ images = []
 [page.seo.publisher]
 name = ""
 logoUrl = ""
+
+[postPreview]
+enable = true
+# Log to console
+debug = false
+# Disable on mobile/touch devices (also checks hover/pointer media queries)
+mobileBp = 900
+# Disable on "/" and "/<lang>/" home pages
+disableOnHome = true
+# Disable inside this container (e.g. homepage post list)
+excludeSelector = "body > div.wrapper > main > div.home"
+# Hover timings
+showDelay = 120
+hideDelay = 220
+# Crop top part of the preview by shifting iframe content up
+cropTopPx = 60
+# If true: load tippy/popper from unpkg CDN
+# If false: use local assets/*
+tippyFromCdn = true
+
+[params.graphView]
+# Master switch
+enable = true
+# Optional diagnostics in console
+debug = true
+# Disable on mobile / touch-like devices
+mobileBp = 900
+

@@ -9,13 +9,15 @@
 # section = ["html", "rss"]
 # taxonomy = ["html"]
 # term = ["html", "rss"]
-
-_merge = "shallow"
+merge = "shallow"
 home = [
   "html",
   "rss",
+  "jsonfeed",
   "archives",
   "offline",
+  "readme",
+  "baidu_urls",
   "search"
 ]
 page = [
@@ -24,10 +26,12 @@ page = [
 ]
 section = [
   "html",
-  "rss"
+  "rss",
+  "jsonfeed"
 ]
 taxonomy = [ "html" ]
 term = [
   "html",
-  "rss"
+  "rss",
+  "jsonfeed"
 ]

@@ -4,9 +4,9 @@
 # -------------------------------------------------------------------------------------
 
 # website title
-title = ""
+title = "Artexxx blog"
 # Hostname (and path) to the root
-baseURL = "http://localhost:1313"
+baseURL = "https://artexxx.github.io/"
 # theme list
 # theme = ["FixIt"] # enable in your site config file
 # determines default content language ["en", "zh-cn", "fr", "pl", ...]
