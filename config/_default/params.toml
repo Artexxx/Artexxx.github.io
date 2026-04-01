@@ -39,6 +39,8 @@ summaryPlainify = false
 # default is false for better performance, especially for single-language sites
 # set to true if your site has multiple languages and you want to show all content
 enableTranslationMerge = false
+# FixIt 0.4.4 | NEW whether to enable tooltip replacement for elements with title attribute, such as footnote references
+tooltip = true
 # FixIt 0.2.14 | NEW FixIt will, by default, inject a theme meta tag in the HTML head on the home page only.
 # You can turn it off, but we would really appreciate if you don’t, as this is a good way to watch FixIt's popularity on the rise.
 disableThemeInject = false
@@ -728,8 +730,14 @@ mode = "classic"
 wrapperClass = ""
 # the maximum number of lines to show in the code block preview
 maxShownLines = 10
+# whether to show shadow effect for code blocks, available values: ["always", "hover", "never"]
+shadow = "never"
 # whether to enable code copy button
 copyable = true
+# [classic] whether to enable code download button in the code block header
+downloadable = false
+# [classic] whether to enable code fullscreen button in the code block header
+fullscreen = false
 # [classic] whether to enable line numbers toggle button in the code block header
 lineNosToggler = true
 # [classic] whether to enable toggle line wrapping button in the code block header
@@ -755,6 +763,17 @@ level = 1
 folderSlash = false
 # list of file or folder names to ignore
 ignoreList = []
+
+# FixIt 0.4.5 | NEW Print config
+[print]
+# whether to expand all admonitions before printing
+expand_admonition = true
+# whether to expand all code blocks and code tabs before printing
+expand_code = true
+# whether to expand all details elements before printing
+expand_details = true
+# whether to expand all file trees before printing
+expand_file_tree = false
 
 # FixIt 0.3.12 | NEW Custom partials config
 # Custom partials must be stored in the /layouts/_partials/ directory.
